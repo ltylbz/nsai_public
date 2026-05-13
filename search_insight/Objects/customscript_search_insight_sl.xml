@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suitelet scriptid="customscript_search_insight_sl">
+  <description>Search Insight — analyses saved search results via LLM.</description>
+  <isinactive>F</isinactive>
+  <name>Search Insight</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/search_insight/search_insight_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_search_insight_sl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>Search Insight</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

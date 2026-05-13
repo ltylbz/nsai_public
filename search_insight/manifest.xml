@@ -1,0 +1,24 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>search_insight</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">CUSTOMRECORDS</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="false">WORKFLOW</feature>
+      <feature required="false">MULTILANGUAGE</feature>
+      <feature required="false">CUSTOMSEGMENTS</feature>
+      <feature required="false">CRM</feature>
+      <feature required="false">EXTREMELIST</feature>
+      <feature required="false">MAILMERGE</feature>
+    </features>
+    <objects>
+      <object>custcentertab_ai</object>
+      <object>customlist_ai_provider_type</object>
+      <object>customlist_ai_model_usage</object>
+      <object>customrecord_ai_models</object>
+      <object>customrecord_ai_provider</object>
+      <object>customrecord_ai_defaults</object>
+    </objects>
+  </dependencies>
+</manifest>

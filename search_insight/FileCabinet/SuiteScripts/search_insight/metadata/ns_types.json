@@ -1,0 +1,2890 @@
+[
+  {
+    "recordType": "ACCOUNT",
+    "searchType": "ACCOUNT",
+    "recordTypeId": "account",
+    "searchTypeId": "account",
+    "label": "Account",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ACCOUNTING_BOOK",
+    "searchType": "ACCOUNTING_BOOK",
+    "recordTypeId": "accountingbook",
+    "searchTypeId": "accountingbook",
+    "label": "Accounting Book",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ACCOUNTING_CONTEXT",
+    "searchType": "ACCOUNTING_CONTEXT",
+    "recordTypeId": "accountingcontext",
+    "searchTypeId": "accountingcontext",
+    "label": "Accounting Context",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ACCOUNTING_PERIOD",
+    "searchType": "ACCOUNTING_PERIOD",
+    "recordTypeId": "accountingperiod",
+    "searchTypeId": "accountingperiod",
+    "label": "Accounting Period",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ADV_INTER_COMPANY_JOURNAL_ENTRY",
+    "searchType": "ADV_INTER_COMPANY_JOURNAL_ENTRY",
+    "recordTypeId": "advintercompanyjournalentry",
+    "searchTypeId": "advintercompanyjournalentry",
+    "label": "Adv Inter Company Journal Entry",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ALLOCATION_SCHEDULE",
+    "searchType": null,
+    "recordTypeId": "allocationschedule",
+    "searchTypeId": null,
+    "label": "Allocation Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "AMORTIZATION_SCHEDULE",
+    "searchType": "AMORTIZATION_SCHEDULE",
+    "recordTypeId": "amortizationschedule",
+    "searchTypeId": "amortizationschedule",
+    "label": "Amortization Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "AMORTIZATION_TEMPLATE",
+    "searchType": "AMORTIZATION_TEMPLATE",
+    "recordTypeId": "amortizationtemplate",
+    "searchTypeId": "amortizationtemplate",
+    "label": "Amortization Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ASSEMBLY_BUILD",
+    "searchType": "ASSEMBLY_BUILD",
+    "recordTypeId": "assemblybuild",
+    "searchTypeId": "assemblybuild",
+    "label": "Assembly Build",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "ASSEMBLY_ITEM",
+    "searchType": "ASSEMBLY_ITEM",
+    "recordTypeId": "assemblyitem",
+    "searchTypeId": "assemblyitem",
+    "label": "Assembly Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "ASSEMBLY_UNBUILD",
+    "searchType": "ASSEMBLY_UNBUILD",
+    "recordTypeId": "assemblyunbuild",
+    "searchTypeId": "assemblyunbuild",
+    "label": "Assembly Unbuild",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "AUTOMATED_CLEARING_HOUSE",
+    "searchType": null,
+    "recordTypeId": "automatedclearinghouse",
+    "searchTypeId": null,
+    "label": "Automated Clearing House",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BALANCE_TRX_BY_SEGMENTS",
+    "searchType": "BALANCE_TRX_BY_SEGMENTS",
+    "recordTypeId": "balancetrxbysegments",
+    "searchTypeId": "BalanceTrxBySegments",
+    "label": "Balance Trx By Segments",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BILLING_ACCOUNT",
+    "searchType": "BILLING_ACCOUNT",
+    "recordTypeId": "billingaccount",
+    "searchTypeId": "billingaccount",
+    "label": "Billing Account",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BILLING_CLASS",
+    "searchType": "BILLING_CLASS",
+    "recordTypeId": "billingclass",
+    "searchTypeId": "billingclass",
+    "label": "Billing Class",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BILLING_RATE_CARD",
+    "searchType": "BILLING_RATE_CARD",
+    "recordTypeId": "billingratecard",
+    "searchTypeId": "billingratecard",
+    "label": "Billing Rate Card",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BILLING_REVENUE_EVENT",
+    "searchType": "BILLING_REVENUE_EVENT",
+    "recordTypeId": "billingrevenueevent",
+    "searchTypeId": "billingrevenueevent",
+    "label": "Billing Revenue Event",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BILLING_SCHEDULE",
+    "searchType": "BILLING_SCHEDULE",
+    "recordTypeId": "billingschedule",
+    "searchTypeId": "billingschedule",
+    "label": "Billing Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BIN",
+    "searchType": "BIN",
+    "recordTypeId": "bin",
+    "searchTypeId": "bin",
+    "label": "Bin",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BIN_TRANSFER",
+    "searchType": "BIN_TRANSFER",
+    "recordTypeId": "bintransfer",
+    "searchTypeId": "bintransfer",
+    "label": "Bin Transfer",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BIN_WORKSHEET",
+    "searchType": "BIN_WORKSHEET",
+    "recordTypeId": "binworksheet",
+    "searchTypeId": "binworksheet",
+    "label": "Bin Worksheet",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BLANKET_PURCHASE_ORDER",
+    "searchType": "BLANKET_PURCHASE_ORDER",
+    "recordTypeId": "blanketpurchaseorder",
+    "searchTypeId": "blanketpurchaseorder",
+    "label": "Blanket Purchase Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "BOM",
+    "searchType": "BOM",
+    "recordTypeId": "bom",
+    "searchTypeId": "bom",
+    "label": "Bom",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BOM_REVISION",
+    "searchType": "BOM_REVISION",
+    "recordTypeId": "bomrevision",
+    "searchTypeId": "bomrevision",
+    "label": "Bom Revision",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BONUS",
+    "searchType": "BONUS",
+    "recordTypeId": "bonus",
+    "searchTypeId": "bonus",
+    "label": "Bonus",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BONUS_TYPE",
+    "searchType": "BONUS_TYPE",
+    "recordTypeId": "bonustype",
+    "searchTypeId": "bonustype",
+    "label": "Bonus Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BUDGET_EXCHANGE_RATE",
+    "searchType": "BUDGET_EXCHANGE_RATE",
+    "recordTypeId": "budgetexchangerate",
+    "searchTypeId": "budgetexchangerate",
+    "label": "Budget Exchange Rate",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BULK_OWNERSHIP_TRANSFER",
+    "searchType": "BULK_OWNERSHIP_TRANSFER",
+    "recordTypeId": "bulkownershiptransfer",
+    "searchTypeId": "bulkownershiptransfer",
+    "label": "Bulk Ownership Transfer",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "BUNDLE_INSTALLATION_SCRIPT",
+    "searchType": "BUNDLE_INSTALLATION_SCRIPT",
+    "recordTypeId": "bundleinstallationscript",
+    "searchTypeId": "bundleinstallationscript",
+    "label": "Bundle Installation Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CALENDAR_EVENT",
+    "searchType": "CALENDAR_EVENT",
+    "recordTypeId": "calendarevent",
+    "searchTypeId": "calendarevent",
+    "label": "Calendar Event",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "CAMPAIGN",
+    "searchType": "CAMPAIGN",
+    "recordTypeId": "campaign",
+    "searchTypeId": "campaign",
+    "label": "Campaign",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CAMPAIGN_RESPONSE",
+    "searchType": null,
+    "recordTypeId": "campaignresponse",
+    "searchTypeId": null,
+    "label": "Campaign Response",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CAMPAIGN_TEMPLATE",
+    "searchType": null,
+    "recordTypeId": "campaigntemplate",
+    "searchTypeId": null,
+    "label": "Campaign Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CARDHOLDER_AUTHENTICATION",
+    "searchType": "CARDHOLDER_AUTHENTICATION",
+    "recordTypeId": "cardholderauthentication",
+    "searchTypeId": "CardholderAuthentication",
+    "label": "Cardholder Authentication",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CASH_REFUND",
+    "searchType": "CASH_REFUND",
+    "recordTypeId": "cashrefund",
+    "searchTypeId": "cashrefund",
+    "label": "Cash Refund",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CASH_SALE",
+    "searchType": "CASH_SALE",
+    "recordTypeId": "cashsale",
+    "searchTypeId": "cashsale",
+    "label": "Cash Sale",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CHARGE",
+    "searchType": "CHARGE",
+    "recordTypeId": "charge",
+    "searchTypeId": "charge",
+    "label": "Charge",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CHARGE_RULE",
+    "searchType": "CHARGE_RULE",
+    "recordTypeId": "chargerule",
+    "searchTypeId": "chargerule",
+    "label": "Charge Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CHECK",
+    "searchType": "CHECK",
+    "recordTypeId": "check",
+    "searchTypeId": "check",
+    "label": "Check",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CLASSIFICATION",
+    "searchType": "CLASSIFICATION",
+    "recordTypeId": "classification",
+    "searchTypeId": "classification",
+    "label": "Classification",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CLIENT_SCRIPT",
+    "searchType": "CLIENT_SCRIPT",
+    "recordTypeId": "clientscript",
+    "searchTypeId": "clientscript",
+    "label": "Client Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CMS_CONTENT",
+    "searchType": "CMS_CONTENT",
+    "recordTypeId": "cmscontent",
+    "searchTypeId": "cmscontent",
+    "label": "Cms Content",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CMS_CONTENT_TYPE",
+    "searchType": "CMS_CONTENT_TYPE",
+    "recordTypeId": "cmscontenttype",
+    "searchTypeId": "cmscontenttype",
+    "label": "Cms Content Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CMS_PAGE",
+    "searchType": "CMS_PAGE",
+    "recordTypeId": "cmspage",
+    "searchTypeId": "cmspage",
+    "label": "Cms Page",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "COMMERCE_CATEGORY",
+    "searchType": "COMMERCE_CATEGORY",
+    "recordTypeId": "commercecategory",
+    "searchTypeId": "commercecategory",
+    "label": "Commerce Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "COMPETITOR",
+    "searchType": "COMPETITOR",
+    "recordTypeId": "competitor",
+    "searchTypeId": "competitor",
+    "label": "Competitor",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "CONSOLIDATED_EXCHANGE_RATE",
+    "searchType": "CONSOLIDATED_EXCHANGE_RATE",
+    "recordTypeId": "consolidatedexchangerate",
+    "searchTypeId": "consolidatedexchangerate",
+    "label": "Consolidated Exchange Rate",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CONTACT",
+    "searchType": "CONTACT",
+    "recordTypeId": "contact",
+    "searchTypeId": "contact",
+    "label": "Contact",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "CONTACT_CATEGORY",
+    "searchType": "CONTACT_CATEGORY",
+    "recordTypeId": "contactcategory",
+    "searchTypeId": "contactcategory",
+    "label": "Contact Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CONTACT_ROLE",
+    "searchType": "CONTACT_ROLE",
+    "recordTypeId": "contactrole",
+    "searchTypeId": "contactrole",
+    "label": "Contact Role",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "COST_CATEGORY",
+    "searchType": "COST_CATEGORY",
+    "recordTypeId": "costcategory",
+    "searchTypeId": "costcategory",
+    "label": "Cost Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "COUPON_CODE",
+    "searchType": "COUPON_CODE",
+    "recordTypeId": "couponcode",
+    "searchTypeId": "couponcode",
+    "label": "Coupon Code",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CREDIT_CARD_CHARGE",
+    "searchType": "CREDIT_CARD_CHARGE",
+    "recordTypeId": "creditcardcharge",
+    "searchTypeId": "creditcardcharge",
+    "label": "Credit Card Charge",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CREDIT_CARD_REFUND",
+    "searchType": "CREDIT_CARD_REFUND",
+    "recordTypeId": "creditcardrefund",
+    "searchTypeId": "creditcardrefund",
+    "label": "Credit Card Refund",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CREDIT_MEMO",
+    "searchType": "CREDIT_MEMO",
+    "recordTypeId": "creditmemo",
+    "searchTypeId": "creditmemo",
+    "label": "Credit Memo",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CURRENCY",
+    "searchType": "CURRENCY",
+    "recordTypeId": "currency",
+    "searchTypeId": "currency",
+    "label": "Currency",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOM_PURCHASE",
+    "searchType": "CUSTOM_PURCHASE",
+    "recordTypeId": "custompurchase",
+    "searchTypeId": "custompurchase",
+    "label": "Custom Purchase",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CUSTOM_SALE",
+    "searchType": "CUSTOM_SALE",
+    "recordTypeId": "customsale",
+    "searchTypeId": "customsale",
+    "label": "Custom Sale",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CUSTOMER",
+    "searchType": "CUSTOMER",
+    "recordTypeId": "customer",
+    "searchTypeId": "customer",
+    "label": "Customer",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "CUSTOMER_CATEGORY",
+    "searchType": "CUSTOMER_CATEGORY",
+    "recordTypeId": "customercategory",
+    "searchTypeId": "customercategory",
+    "label": "Customer Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOMER_DEPOSIT",
+    "searchType": "CUSTOMER_DEPOSIT",
+    "recordTypeId": "customerdeposit",
+    "searchTypeId": "customerdeposit",
+    "label": "Customer Deposit",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CUSTOMER_MESSAGE",
+    "searchType": "CUSTOMER_MESSAGE",
+    "recordTypeId": "customermessage",
+    "searchTypeId": "customermessage",
+    "label": "Customer Message",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOMER_PAYMENT",
+    "searchType": "CUSTOMER_PAYMENT",
+    "recordTypeId": "customerpayment",
+    "searchTypeId": "customerpayment",
+    "label": "Customer Payment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CUSTOMER_PAYMENT_AUTHORIZATION",
+    "searchType": "CUSTOMER_PAYMENT_AUTHORIZATION",
+    "recordTypeId": "customerpaymentauthorization",
+    "searchTypeId": "customerpaymentauthorization",
+    "label": "Customer Payment Authorization",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOM_RECORD",
+    "searchType": "CUSTOM_RECORD",
+    "recordTypeId": "customrecord",
+    "searchTypeId": "customrecord",
+    "label": "Custom Record",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOMER_REFUND",
+    "searchType": "CUSTOMER_REFUND",
+    "recordTypeId": "customerrefund",
+    "searchTypeId": "customerrefund",
+    "label": "Customer Refund",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "CUSTOMER_STATUS",
+    "searchType": "CUSTOMER_STATUS",
+    "recordTypeId": "customerstatus",
+    "searchTypeId": "customerstatus",
+    "label": "Customer Status",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOMER_SUBSIDIARY_RELATIONSHIP",
+    "searchType": "CUSTOMER_SUBSIDIARY_RELATIONSHIP",
+    "recordTypeId": "customersubsidiaryrelationship",
+    "searchTypeId": "customersubsidiaryrelationship",
+    "label": "Customer Subsidiary Relationship",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "CUSTOM_TRANSACTION",
+    "searchType": "CUSTOM_TRANSACTION",
+    "recordTypeId": "customtransaction",
+    "searchTypeId": "customtransaction",
+    "label": "Custom Transaction",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "DEPARTMENT",
+    "searchType": "DEPARTMENT",
+    "recordTypeId": "department",
+    "searchTypeId": "department",
+    "label": "Department",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "DEPOSIT",
+    "searchType": "DEPOSIT",
+    "recordTypeId": "deposit",
+    "searchTypeId": "deposit",
+    "label": "Deposit",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "DEPOSIT_APPLICATION",
+    "searchType": "DEPOSIT_APPLICATION",
+    "recordTypeId": "depositapplication",
+    "searchTypeId": "depositapplication",
+    "label": "Deposit Application",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "DESCRIPTION_ITEM",
+    "searchType": "DESCRIPTION_ITEM",
+    "recordTypeId": "descriptionitem",
+    "searchTypeId": "descriptionitem",
+    "label": "Description Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "DISCOUNT_ITEM",
+    "searchType": "DISCOUNT_ITEM",
+    "recordTypeId": "discountitem",
+    "searchTypeId": "discountitem",
+    "label": "Discount Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "DOWNLOAD_ITEM",
+    "searchType": "DOWNLOAD_ITEM",
+    "recordTypeId": "downloaditem",
+    "searchTypeId": "downloaditem",
+    "label": "Download Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "EMAIL_TEMPLATE",
+    "searchType": "EMAIL_TEMPLATE",
+    "recordTypeId": "emailtemplate",
+    "searchTypeId": "emailtemplate",
+    "label": "Email Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EMPLOYEE",
+    "searchType": "EMPLOYEE",
+    "recordTypeId": "employee",
+    "searchTypeId": "employee",
+    "label": "Employee",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "EMPLOYEE_CHANGE_REQUEST",
+    "searchType": "EMPLOYEE_CHANGE_REQUEST",
+    "recordTypeId": "employeechangerequest",
+    "searchTypeId": "employeechangerequest",
+    "label": "Employee Change Request",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EMPLOYEE_CHANGE_REQUEST_TYPE",
+    "searchType": "EMPLOYEE_CHANGE_REQUEST_TYPE",
+    "recordTypeId": "employeechangerequesttype",
+    "searchTypeId": "employeechangerequesttype",
+    "label": "Employee Change Request Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EMPLOYEE_EXPENSE_SOURCE_TYPE",
+    "searchType": null,
+    "recordTypeId": "employeeexpensesourcetype",
+    "searchTypeId": null,
+    "label": "Employee Expense Source Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EMPLOYEE_STATUS",
+    "searchType": "EMPLOYEE_STATUS",
+    "recordTypeId": "employeestatus",
+    "searchTypeId": "EmployeeStatus",
+    "label": "Employee Status",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EMPLOYEE_TYPE",
+    "searchType": "EMPLOYEE_TYPE",
+    "recordTypeId": "employeetype",
+    "searchTypeId": "EmployeeType",
+    "label": "Employee Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ENTITY_ACCOUNT_MAPPING",
+    "searchType": "ENTITY_ACCOUNT_MAPPING",
+    "recordTypeId": "entityaccountmapping",
+    "searchTypeId": "entityaccountmapping",
+    "label": "Entity Account Mapping",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ESTIMATE",
+    "searchType": "ESTIMATE",
+    "recordTypeId": "estimate",
+    "searchTypeId": "estimate",
+    "label": "Estimate",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "EXPENSE_AMORTIZATION_EVENT",
+    "searchType": "EXPENSE_AMORTIZATION_EVENT",
+    "recordTypeId": "expenseamortizationevent",
+    "searchTypeId": "expenseamortizationevent",
+    "label": "Expense Amortization Event",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EXPENSE_CATEGORY",
+    "searchType": "EXPENSE_CATEGORY",
+    "recordTypeId": "expensecategory",
+    "searchTypeId": "expensecategory",
+    "label": "Expense Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EXPENSE_PLAN",
+    "searchType": "EXPENSE_PLAN",
+    "recordTypeId": "expenseplan",
+    "searchTypeId": "expenseplan",
+    "label": "Expense Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "EXPENSE_REPORT",
+    "searchType": "EXPENSE_REPORT",
+    "recordTypeId": "expensereport",
+    "searchTypeId": "expensereport",
+    "label": "Expense Report",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "EXPENSE_REPORT_POLICY",
+    "searchType": "EXPENSE_REPORT_POLICY",
+    "recordTypeId": "expensereportpolicy",
+    "searchTypeId": "expensereportpolicy",
+    "label": "Expense Report Policy",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FAIR_VALUE_PRICE",
+    "searchType": "FAIR_VALUE_PRICE",
+    "recordTypeId": "fairvalueprice",
+    "searchTypeId": "fairvalueprice",
+    "label": "Fair Value Price",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FINANCIAL_INSTITUTION",
+    "searchType": "FINANCIAL_INSTITUTION",
+    "recordTypeId": "financialinstitution",
+    "searchTypeId": "financialinstitution",
+    "label": "Financial Institution",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FIXED_AMOUNT_PROJECT_REVENUE_RULE",
+    "searchType": "FIXED_AMOUNT_PROJECT_REVENUE_RULE",
+    "recordTypeId": "fixedamountprojectrevenuerule",
+    "searchTypeId": "fixedamountprojectrevenuerule",
+    "label": "Fixed Amount Project Revenue Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FOLDER",
+    "searchType": "FOLDER",
+    "recordTypeId": "folder",
+    "searchTypeId": "folder",
+    "label": "Folder",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FORMAT_PROFILE",
+    "searchType": null,
+    "recordTypeId": "formatprofile",
+    "searchTypeId": null,
+    "label": "Format Profile",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "FULFILLMENT_REQUEST",
+    "searchType": "FULFILLMENT_REQUEST",
+    "recordTypeId": "fulfillmentrequest",
+    "searchTypeId": "fulfillmentrequest",
+    "label": "Fulfillment Request",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GENERAL_TOKEN",
+    "searchType": null,
+    "recordTypeId": "generaltoken",
+    "searchTypeId": null,
+    "label": "General Token",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GENERIC_RESOURCE",
+    "searchType": "GENERIC_RESOURCE",
+    "recordTypeId": "genericresource",
+    "searchTypeId": "genericresource",
+    "label": "Generic Resource",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GIFT_CERTIFICATE",
+    "searchType": "GIFT_CERTIFICATE",
+    "recordTypeId": "giftcertificate",
+    "searchTypeId": "giftcertificate",
+    "label": "Gift Certificate",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GIFT_CERTIFICATE_ITEM",
+    "searchType": "GIFT_CERTIFICATE_ITEM",
+    "recordTypeId": "giftcertificateitem",
+    "searchTypeId": "giftcertificateitem",
+    "label": "Gift Certificate Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "GLOBAL_ACCOUNT_MAPPING",
+    "searchType": "GLOBAL_ACCOUNT_MAPPING",
+    "recordTypeId": "globalaccountmapping",
+    "searchTypeId": "globalaccountmapping",
+    "label": "Global Account Mapping",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GLOBAL_INVENTORY_RELATIONSHIP",
+    "searchType": "GLOBAL_INVENTORY_RELATIONSHIP",
+    "recordTypeId": "globalinventoryrelationship",
+    "searchTypeId": "globalinventoryrelationship",
+    "label": "Global Inventory Relationship",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GL_NUMBERING_SEQUENCE",
+    "searchType": "GL_NUMBERING_SEQUENCE",
+    "recordTypeId": "glnumberingsequence",
+    "searchTypeId": "glnumberingsequence",
+    "label": "Gl Numbering Sequence",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "GOAL",
+    "searchType": "GOAL",
+    "recordTypeId": "goal",
+    "searchTypeId": "goal",
+    "label": "Goal",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "IMPORTED_EMPLOYEE_EXPENSE",
+    "searchType": "IMPORTED_EMPLOYEE_EXPENSE",
+    "recordTypeId": "importedemployeeexpense",
+    "searchTypeId": "importedemployeeexpense",
+    "label": "Imported Employee Expense",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INBOUND_SHIPMENT",
+    "searchType": "INBOUND_SHIPMENT",
+    "recordTypeId": "inboundshipment",
+    "searchTypeId": "inboundshipment",
+    "label": "Inbound Shipment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INTERCOMP_ALLOCATION_SCHEDULE",
+    "searchType": null,
+    "recordTypeId": "intercompallocationschedule",
+    "searchTypeId": null,
+    "label": "Intercomp Allocation Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INTER_COMPANY_JOURNAL_ENTRY",
+    "searchType": "INTER_COMPANY_JOURNAL_ENTRY",
+    "recordTypeId": "intercompanyjournalentry",
+    "searchTypeId": "intercompanyjournalentry",
+    "label": "Inter Company Journal Entry",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INTER_COMPANY_TRANSFER_ORDER",
+    "searchType": "INTER_COMPANY_TRANSFER_ORDER",
+    "recordTypeId": "intercompanytransferorder",
+    "searchTypeId": "intercompanytransferorder",
+    "label": "Inter Company Transfer Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INVENTORY_ADJUSTMENT",
+    "searchType": "INVENTORY_ADJUSTMENT",
+    "recordTypeId": "inventoryadjustment",
+    "searchTypeId": "inventoryadjustment",
+    "label": "Inventory Adjustment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INVENTORY_COST_REVALUATION",
+    "searchType": "INVENTORY_COST_REVALUATION",
+    "recordTypeId": "inventorycostrevaluation",
+    "searchTypeId": "inventorycostrevaluation",
+    "label": "Inventory Cost Revaluation",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INVENTORY_COUNT",
+    "searchType": "INVENTORY_COUNT",
+    "recordTypeId": "inventorycount",
+    "searchTypeId": "inventorycount",
+    "label": "Inventory Count",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INVENTORY_DETAIL",
+    "searchType": "INVENTORY_DETAIL",
+    "recordTypeId": "inventorydetail",
+    "searchTypeId": "inventorydetail",
+    "label": "Inventory Detail",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INVENTORY_ITEM",
+    "searchType": "INVENTORY_ITEM",
+    "recordTypeId": "inventoryitem",
+    "searchTypeId": "inventoryitem",
+    "label": "Inventory Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "INVENTORY_NUMBER",
+    "searchType": "INVENTORY_NUMBER",
+    "recordTypeId": "inventorynumber",
+    "searchTypeId": "inventorynumber",
+    "label": "Inventory Number",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "INVENTORY_STATUS",
+    "searchType": "INVENTORY_STATUS",
+    "recordTypeId": "inventorystatus",
+    "searchTypeId": "inventorystatus",
+    "label": "Inventory Status",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INVENTORY_STATUS_CHANGE",
+    "searchType": "INVENTORY_STATUS_CHANGE",
+    "recordTypeId": "inventorystatuschange",
+    "searchTypeId": "inventorystatuschange",
+    "label": "Inventory Status Change",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "INVENTORY_TRANSFER",
+    "searchType": "INVENTORY_TRANSFER",
+    "recordTypeId": "inventorytransfer",
+    "searchTypeId": "inventorytransfer",
+    "label": "Inventory Transfer",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INVOICE",
+    "searchType": "INVOICE",
+    "recordTypeId": "invoice",
+    "searchTypeId": "invoice",
+    "label": "Invoice",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "INVOICE_GROUP",
+    "searchType": "INVOICE_GROUP",
+    "recordTypeId": "invoicegroup",
+    "searchTypeId": "invoicegroup",
+    "label": "Invoice Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ISSUE",
+    "searchType": "ISSUE",
+    "recordTypeId": "issue",
+    "searchTypeId": "issue",
+    "label": "Issue",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "ISSUE_PRODUCT",
+    "searchType": null,
+    "recordTypeId": "issueproduct",
+    "searchTypeId": null,
+    "label": "Issue Product",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ISSUE_PRODUCT_VERSION",
+    "searchType": null,
+    "recordTypeId": "issueproductversion",
+    "searchTypeId": null,
+    "label": "Issue Product Version",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_ACCOUNT_MAPPING",
+    "searchType": "ITEM_ACCOUNT_MAPPING",
+    "recordTypeId": "itemaccountmapping",
+    "searchTypeId": "itemaccountmapping",
+    "label": "Item Account Mapping",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_COLLECTION",
+    "searchType": "ITEM_COLLECTION",
+    "recordTypeId": "itemcollection",
+    "searchTypeId": "itemcollection",
+    "label": "Item Collection",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_COLLECTION_ITEM_MAP",
+    "searchType": "ITEM_COLLECTION_ITEM_MAP",
+    "recordTypeId": "itemcollectionitemmap",
+    "searchTypeId": "itemcollectionitemmap",
+    "label": "Item Collection Item Map",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_DEMAND_PLAN",
+    "searchType": "ITEM_DEMAND_PLAN",
+    "recordTypeId": "itemdemandplan",
+    "searchTypeId": "itemdemandplan",
+    "label": "Item Demand Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_FULFILLMENT",
+    "searchType": "ITEM_FULFILLMENT",
+    "recordTypeId": "itemfulfillment",
+    "searchTypeId": "itemfulfillment",
+    "label": "Item Fulfillment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "ITEM_GROUP",
+    "searchType": "ITEM_GROUP",
+    "recordTypeId": "itemgroup",
+    "searchTypeId": "itemgroup",
+    "label": "Item Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_LOCATION_CONFIGURATION",
+    "searchType": "ITEM_LOCATION_CONFIGURATION",
+    "recordTypeId": "itemlocationconfiguration",
+    "searchTypeId": "itemlocationconfiguration",
+    "label": "Item Location Configuration",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_PROCESS_FAMILY",
+    "searchType": "ITEM_PROCESS_FAMILY",
+    "recordTypeId": "itemprocessfamily",
+    "searchTypeId": "itemprocessfamily",
+    "label": "Item Process Family",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_PROCESS_GROUP",
+    "searchType": "ITEM_PROCESS_GROUP",
+    "recordTypeId": "itemprocessgroup",
+    "searchTypeId": "itemprocessgroup",
+    "label": "Item Process Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_RECEIPT",
+    "searchType": "ITEM_RECEIPT",
+    "recordTypeId": "itemreceipt",
+    "searchTypeId": "itemreceipt",
+    "label": "Item Receipt",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "ITEM_REVISION",
+    "searchType": "ITEM_REVISION",
+    "recordTypeId": "itemrevision",
+    "searchTypeId": "itemrevision",
+    "label": "Item Revision",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ITEM_SUPPLY_PLAN",
+    "searchType": "ITEM_SUPPLY_PLAN",
+    "recordTypeId": "itemsupplyplan",
+    "searchTypeId": "itemsupplyplan",
+    "label": "Item Supply Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "JOB",
+    "searchType": "JOB",
+    "recordTypeId": "job",
+    "searchTypeId": "job",
+    "label": "Job",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "JOB_STATUS",
+    "searchType": "JOB_STATUS",
+    "recordTypeId": "jobstatus",
+    "searchTypeId": "jobstatus",
+    "label": "Job Status",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "JOB_TYPE",
+    "searchType": "JOB_TYPE",
+    "recordTypeId": "jobtype",
+    "searchTypeId": "jobtype",
+    "label": "Job Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "JOURNAL_ENTRY",
+    "searchType": "JOURNAL_ENTRY",
+    "recordTypeId": "journalentry",
+    "searchTypeId": "journalentry",
+    "label": "Journal Entry",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "KIT_ITEM",
+    "searchType": "KIT_ITEM",
+    "recordTypeId": "kititem",
+    "searchTypeId": "kititem",
+    "label": "Kit Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "LABOR_ BASED_PROJECT_REVENUE_RULE",
+    "searchType": null,
+    "recordTypeId": null,
+    "searchTypeId": null,
+    "label": "Labor  Based Project Revenue Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "LEAD",
+    "searchType": "LEAD",
+    "recordTypeId": "lead",
+    "searchTypeId": "lead",
+    "label": "Lead",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "LOCATION",
+    "searchType": "LOCATION",
+    "recordTypeId": "location",
+    "searchTypeId": "location",
+    "label": "Location",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "LOT_NUMBERED_ASSEMBLY_ITEM",
+    "searchType": "LOT_NUMBERED_ASSEMBLY_ITEM",
+    "recordTypeId": "lotnumberedassemblyitem",
+    "searchTypeId": "lotnumberedassemblyitem",
+    "label": "Lot Numbered Assembly Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "LOT_NUMBERED_INVENTORY_ITEM",
+    "searchType": "LOT_NUMBERED_INVENTORY_ITEM",
+    "recordTypeId": "lotnumberedinventoryitem",
+    "searchTypeId": "lotnumberedinventoryitem",
+    "label": "Lot Numbered Inventory Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "MANUFACTURING_COST_TEMPLATE",
+    "searchType": "MANUFACTURING_COST_TEMPLATE",
+    "recordTypeId": "manufacturingcosttemplate",
+    "searchTypeId": "manufacturingcosttemplate",
+    "label": "Manufacturing Cost Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MANUFACTURING_OPERATION_TASK",
+    "searchType": "MANUFACTURING_OPERATION_TASK",
+    "recordTypeId": "manufacturingoperationtask",
+    "searchTypeId": "manufacturingoperationtask",
+    "label": "Manufacturing Operation Task",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "MANUFACTURING_ROUTING",
+    "searchType": "MANUFACTURING_ROUTING",
+    "recordTypeId": "manufacturingrouting",
+    "searchTypeId": "manufacturingrouting",
+    "label": "Manufacturing Routing",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MAP_REDUCE_SCRIPT",
+    "searchType": "MAP_REDUCE_SCRIPT",
+    "recordTypeId": "mapreducescript",
+    "searchTypeId": "mapreducescript",
+    "label": "Map Reduce Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MARKUP_ITEM",
+    "searchType": "MARKUP_ITEM",
+    "recordTypeId": "markupitem",
+    "searchTypeId": "markupitem",
+    "label": "Markup Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "MASSUPDATE_SCRIPT",
+    "searchType": "MASSUPDATE_SCRIPT",
+    "recordTypeId": "massupdatescript",
+    "searchTypeId": "massupdatescript",
+    "label": "Massupdate Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MEM_DOC",
+    "searchType": "MEM_DOC",
+    "recordTypeId": "memdoc",
+    "searchTypeId": "memdoc",
+    "label": "Mem Doc",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MERCHANDISE_HIERARCHY_LEVEL",
+    "searchType": null,
+    "recordTypeId": "merchandisehierarchylevel",
+    "searchTypeId": null,
+    "label": "Merchandise Hierarchy Level",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MERCHANDISE_HIERARCHY_NODE",
+    "searchType": "MERCHANDISE_HIERARCHY_NODE",
+    "recordTypeId": "merchandisehierarchynode",
+    "searchTypeId": "merchandisehierarchynode",
+    "label": "Merchandise Hierarchy Node",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MERCHANDISE_HIERARCHY_VERSION",
+    "searchType": "MERCHANDISE_HIERARCHY_VERSION",
+    "recordTypeId": "merchandisehierarchyversion",
+    "searchTypeId": "merchandisehierarchyversion",
+    "label": "Merchandise Hierarchy Version",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "MESSAGE",
+    "searchType": "MESSAGE",
+    "recordTypeId": "message",
+    "searchTypeId": "message",
+    "label": "Message",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "MFG_PLANNED_TIME",
+    "searchType": "MFG_PLANNED_TIME",
+    "recordTypeId": "mfgplannedtime",
+    "searchTypeId": "mfgplannedtime",
+    "label": "Mfg Planned Time",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "NEXUS",
+    "searchType": "NEXUS",
+    "recordTypeId": "nexus",
+    "searchTypeId": "nexus",
+    "label": "Nexus",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "NON_INVENTORY_ITEM",
+    "searchType": "NON_INVENTORY_ITEM",
+    "recordTypeId": "noninventoryitem",
+    "searchTypeId": "noninventoryitem",
+    "label": "Non Inventory Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "NOTE",
+    "searchType": "NOTE",
+    "recordTypeId": "note",
+    "searchTypeId": "note",
+    "label": "Note",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "NOTE_TYPE",
+    "searchType": "NOTE_TYPE",
+    "recordTypeId": "notetype",
+    "searchTypeId": "notetype",
+    "label": "Note Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "OPPORTUNITY",
+    "searchType": "OPPORTUNITY",
+    "recordTypeId": "opportunity",
+    "searchTypeId": "opportunity",
+    "label": "Opportunity",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "ORDER_RESERVATION",
+    "searchType": "ORDER_RESERVATION",
+    "recordTypeId": "orderreservation",
+    "searchTypeId": "orderreservation",
+    "label": "Order Reservation",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ORDER_SCHEDULE",
+    "searchType": null,
+    "recordTypeId": "orderschedule",
+    "searchTypeId": null,
+    "label": "Order Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ORDER_TYPE",
+    "searchType": "ORDER_TYPE",
+    "recordTypeId": "ordertype",
+    "searchTypeId": "ordertype",
+    "label": "Order Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "OTHER_CHARGE_ITEM",
+    "searchType": "OTHER_CHARGE_ITEM",
+    "recordTypeId": "otherchargeitem",
+    "searchTypeId": "otherchargeitem",
+    "label": "Other Charge Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "OTHER_NAME",
+    "searchType": "OTHER_NAME",
+    "recordTypeId": "othername",
+    "searchTypeId": "othername",
+    "label": "Other Name",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "OTHER_NAME_CATEGORY",
+    "searchType": "OTHER_NAME_CATEGORY",
+    "recordTypeId": "othernamecategory",
+    "searchTypeId": "othernamecategory",
+    "label": "Other Name Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PARTNER",
+    "searchType": "PARTNER",
+    "recordTypeId": "partner",
+    "searchTypeId": "partner",
+    "label": "Partner",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "PARTNER_CATEGORY",
+    "searchType": "PARTNER_CATEGORY",
+    "recordTypeId": "partnercategory",
+    "searchTypeId": "partnercategory",
+    "label": "Partner Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PAYCHECK",
+    "searchType": "PAYCHECK",
+    "recordTypeId": "paycheck",
+    "searchTypeId": "paycheck",
+    "label": "Paycheck",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PAYCHECK_JOURNAL",
+    "searchType": "PAYCHECK_JOURNAL",
+    "recordTypeId": "paycheckjournal",
+    "searchTypeId": "paycheckjournal",
+    "label": "Paycheck Journal",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "PAYMENT_CARD",
+    "searchType": null,
+    "recordTypeId": "paymentcard",
+    "searchTypeId": null,
+    "label": "Payment Card",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PAYMENT_CARD_TOKEN",
+    "searchType": null,
+    "recordTypeId": "paymentcardtoken",
+    "searchTypeId": null,
+    "label": "Payment Card Token",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PAYMENT_ITEM",
+    "searchType": "PAYMENT_ITEM",
+    "recordTypeId": "paymentitem",
+    "searchTypeId": "paymentitem",
+    "label": "Payment Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "PAYMENT_METHOD",
+    "searchType": "PAYMENT_METHOD",
+    "recordTypeId": "paymentmethod",
+    "searchTypeId": "paymentmethod",
+    "label": "Payment Method",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PAYROLL_ITEM",
+    "searchType": "PAYROLL_ITEM",
+    "recordTypeId": "payrollitem",
+    "searchTypeId": "payrollitem",
+    "label": "Payroll Item",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PCT_COMPLETE_PROJECT_REVENUE_RULE",
+    "searchType": "PCT_COMPLETE_PROJECT_REVENUE_RULE",
+    "recordTypeId": "pctcompleteprojectrevenuerule",
+    "searchTypeId": "pctcompleteprojectrevenuerule",
+    "label": "Pct Complete Project Revenue Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PERFORMANCE_METRIC",
+    "searchType": "PERFORMANCE_METRIC",
+    "recordTypeId": "performancemetric",
+    "searchTypeId": "performancemetric",
+    "label": "Performance Metric",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PERFORMANCE_REVIEW",
+    "searchType": "PERFORMANCE_REVIEW",
+    "recordTypeId": "performancereview",
+    "searchTypeId": "performancereview",
+    "label": "Performance Review",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PERFORMANCE_REVIEW_SCHEDULE",
+    "searchType": "PERFORMANCE_REVIEW_SCHEDULE",
+    "recordTypeId": "performancereviewschedule",
+    "searchTypeId": "performancereviewschedule",
+    "label": "Performance Review Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PERIOD_END_JOURNAL",
+    "searchType": "PERIOD_END_JOURNAL",
+    "recordTypeId": "periodendjournal",
+    "searchTypeId": "periodendjournal",
+    "label": "Period End Journal",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "PHONE_CALL",
+    "searchType": "PHONE_CALL",
+    "recordTypeId": "phonecall",
+    "searchTypeId": "phonecall",
+    "label": "Phone Call",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "PICK_STRATEGY",
+    "searchType": "PICK_STRATEGY",
+    "recordTypeId": "pickstrategy",
+    "searchTypeId": "pickstrategy",
+    "label": "Pick Strategy",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PICK_TASK",
+    "searchType": "PICK_TASK",
+    "recordTypeId": "picktask",
+    "searchTypeId": "picktask",
+    "label": "Pick Task",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "PLANNED_ORDER",
+    "searchType": "PLANNED_ORDER",
+    "recordTypeId": "plannedorder",
+    "searchTypeId": "plannedorder",
+    "label": "Planned Order",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PLANNING_ITEM_CATEGORY",
+    "searchType": "PLANNING_ITEM_CATEGORY",
+    "recordTypeId": "planningitemcategory",
+    "searchTypeId": "planningitemcategory",
+    "label": "Planning Item Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PLANNING_ITEM_GROUP",
+    "searchType": "PLANNING_ITEM_GROUP",
+    "recordTypeId": "planningitemgroup",
+    "searchTypeId": "planningitemgroup",
+    "label": "Planning Item Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PLANNING_RULE_GROUP",
+    "searchType": "PLANNING_RULE_GROUP",
+    "recordTypeId": "planningrulegroup",
+    "searchTypeId": "planningrulegroup",
+    "label": "Planning Rule Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PLANNING_VIEW",
+    "searchType": "PLANNING_VIEW",
+    "recordTypeId": "planningview",
+    "searchTypeId": "planningview",
+    "label": "Planning View",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PORTLET",
+    "searchType": "PORTLET",
+    "recordTypeId": "portlet",
+    "searchTypeId": "portlet",
+    "label": "Portlet",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PRICE_BOOK",
+    "searchType": "PRICE_BOOK",
+    "recordTypeId": "pricebook",
+    "searchTypeId": "pricebook",
+    "label": "Price Book",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PRICE_LEVEL",
+    "searchType": "PRICE_LEVEL",
+    "recordTypeId": "pricelevel",
+    "searchTypeId": "pricelevel",
+    "label": "Price Level",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PRICE_PLAN",
+    "searchType": "PRICE_PLAN",
+    "recordTypeId": "priceplan",
+    "searchTypeId": "priceplan",
+    "label": "Price Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PRICING_GROUP",
+    "searchType": "PRICING_GROUP",
+    "recordTypeId": "pricinggroup",
+    "searchTypeId": "pricinggroup",
+    "label": "Pricing Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROJECT_EXPENSE_TYPE",
+    "searchType": "PROJECT_EXPENSE_TYPE",
+    "recordTypeId": "projectexpensetype",
+    "searchTypeId": "projectexpensetype",
+    "label": "Project Expense Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROJECT_IC_CHARGE_REQUEST",
+    "searchType": "PROJECT_IC_CHARGE_REQUEST",
+    "recordTypeId": "projecticchargerequest",
+    "searchTypeId": "ProjectIcChargeRequest",
+    "label": "Project Ic Charge Request",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROJECT_TASK",
+    "searchType": "PROJECT_TASK",
+    "recordTypeId": "projecttask",
+    "searchTypeId": "projecttask",
+    "label": "Project Task",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROJECT_TEMPLATE",
+    "searchType": "PROJECT_TEMPLATE",
+    "recordTypeId": "projecttemplate",
+    "searchTypeId": "projecttemplate",
+    "label": "Project Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROMOTION_CODE",
+    "searchType": "PROMOTION_CODE",
+    "recordTypeId": "promotioncode",
+    "searchTypeId": "promotioncode",
+    "label": "Promotion Code",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PROSPECT",
+    "searchType": "PROSPECT",
+    "recordTypeId": "prospect",
+    "searchTypeId": "prospect",
+    "label": "Prospect",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "PURCHASE_CONTRACT",
+    "searchType": "PURCHASE_CONTRACT",
+    "recordTypeId": "purchasecontract",
+    "searchTypeId": "purchasecontract",
+    "label": "Purchase Contract",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "PURCHASE_ORDER",
+    "searchType": "PURCHASE_ORDER",
+    "recordTypeId": "purchaseorder",
+    "searchTypeId": "purchaseorder",
+    "label": "Purchase Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "PURCHASE_REQUISITION",
+    "searchType": "PURCHASE_REQUISITION",
+    "recordTypeId": "purchaserequisition",
+    "searchTypeId": "purchaserequisition",
+    "label": "Purchase Requisition",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "REALLOCATE_ITEM",
+    "searchType": null,
+    "recordTypeId": "reallocateitem",
+    "searchTypeId": null,
+    "label": "Reallocate Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "RECEIVE_INBOUND_SHIPMENT",
+    "searchType": null,
+    "recordTypeId": "receiveinboundshipment",
+    "searchTypeId": null,
+    "label": "Receive Inbound Shipment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "RESOURCE_ALLOCATION",
+    "searchType": "RESOURCE_ALLOCATION",
+    "recordTypeId": "resourceallocation",
+    "searchTypeId": "resourceallocation",
+    "label": "Resource Allocation",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "RESTLET",
+    "searchType": "RESTLET",
+    "recordTypeId": "restlet",
+    "searchTypeId": "restlet",
+    "label": "Restlet",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "RETURN_AUTHORIZATION",
+    "searchType": "RETURN_AUTHORIZATION",
+    "recordTypeId": "returnauthorization",
+    "searchTypeId": "returnauthorization",
+    "label": "Return Authorization",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "REVENUE_ARRANGEMENT",
+    "searchType": "REVENUE_ARRANGEMENT",
+    "recordTypeId": "revenuearrangement",
+    "searchTypeId": "revenuearrangement",
+    "label": "Revenue Arrangement",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "REVENUE_COMMITMENT",
+    "searchType": "REVENUE_COMMITMENT",
+    "recordTypeId": "revenuecommitment",
+    "searchTypeId": "revenuecommitment",
+    "label": "Revenue Commitment",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "REVENUE_COMMITMENT_REVERSAL",
+    "searchType": "REVENUE_COMMITMENT_REVERSAL",
+    "recordTypeId": "revenuecommitmentreversal",
+    "searchTypeId": "revenuecommitmentreversal",
+    "label": "Revenue Commitment Reversal",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "REVENUE_PLAN",
+    "searchType": "REVENUE_PLAN",
+    "recordTypeId": "revenueplan",
+    "searchTypeId": "revenueplan",
+    "label": "Revenue Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "REV_REC_SCHEDULE",
+    "searchType": "REV_REC_SCHEDULE",
+    "recordTypeId": "revrecschedule",
+    "searchTypeId": "revrecschedule",
+    "label": "Rev Rec Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "REV_REC_TEMPLATE",
+    "searchType": "REV_REC_TEMPLATE",
+    "recordTypeId": "revrectemplate",
+    "searchTypeId": "revrectemplate",
+    "label": "Rev Rec Template",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SALES_CHANNEL",
+    "searchType": "SALES_CHANNEL",
+    "recordTypeId": "saleschannel",
+    "searchTypeId": "saleschannel",
+    "label": "Sales Channel",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SALES_ORDER",
+    "searchType": "SALES_ORDER",
+    "recordTypeId": "salesorder",
+    "searchTypeId": "salesorder",
+    "label": "Sales Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "SALES_ROLE",
+    "searchType": "SALES_ROLE",
+    "recordTypeId": "salesrole",
+    "searchTypeId": "salesrole",
+    "label": "Sales Role",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SALES_TAX_ITEM",
+    "searchType": "SALES_TAX_ITEM",
+    "recordTypeId": "salestaxitem",
+    "searchTypeId": "salestaxitem",
+    "label": "Sales Tax Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SCHEDULED_SCRIPT",
+    "searchType": "SCHEDULED_SCRIPT",
+    "recordTypeId": "scheduledscript",
+    "searchTypeId": "scheduledscript",
+    "label": "Scheduled Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SCHEDULED_SCRIPT_INSTANCE",
+    "searchType": "SCHEDULED_SCRIPT_INSTANCE",
+    "recordTypeId": "scheduledscriptinstance",
+    "searchTypeId": "scheduledscriptinstance",
+    "label": "Scheduled Script Instance",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SCRIPT_DEPLOYMENT",
+    "searchType": "SCRIPT_DEPLOYMENT",
+    "recordTypeId": "scriptdeployment",
+    "searchTypeId": "scriptdeployment",
+    "label": "Script Deployment",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SERIALIZED_ASSEMBLY_ITEM",
+    "searchType": "SERIALIZED_ASSEMBLY_ITEM",
+    "recordTypeId": "serializedassemblyitem",
+    "searchTypeId": "serializedassemblyitem",
+    "label": "Serialized Assembly Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SERIALIZED_INVENTORY_ITEM",
+    "searchType": "SERIALIZED_INVENTORY_ITEM",
+    "recordTypeId": "serializedinventoryitem",
+    "searchTypeId": "serializedinventoryitem",
+    "label": "Serialized Inventory Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SERVICE_ITEM",
+    "searchType": "SERVICE_ITEM",
+    "recordTypeId": "serviceitem",
+    "searchTypeId": "serviceitem",
+    "label": "Service Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SHIP_ITEM",
+    "searchType": "SHIP_ITEM",
+    "recordTypeId": "shipitem",
+    "searchTypeId": "shipitem",
+    "label": "Ship Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SOLUTION",
+    "searchType": "SOLUTION",
+    "recordTypeId": "solution",
+    "searchTypeId": "solution",
+    "label": "Solution",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "STATISTICAL_JOURNAL_ENTRY",
+    "searchType": "STATISTICAL_JOURNAL_ENTRY",
+    "recordTypeId": "statisticaljournalentry",
+    "searchTypeId": "statisticaljournalentry",
+    "label": "Statistical Journal Entry",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "STORE_PICKUP_FULFILLMENT",
+    "searchType": "STORE_PICKUP_FULFILLMENT",
+    "recordTypeId": "storepickupfulfillment",
+    "searchTypeId": "storepickupfulfillment",
+    "label": "Store Pickup Fulfillment",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSCRIPTION",
+    "searchType": "SUBSCRIPTION",
+    "recordTypeId": "subscription",
+    "searchTypeId": "subscription",
+    "label": "Subscription",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSCRIPTION_CHANGE_ORDER",
+    "searchType": "SUBSCRIPTION_CHANGE_ORDER",
+    "recordTypeId": "subscriptionchangeorder",
+    "searchTypeId": "subscriptionchangeorder",
+    "label": "Subscription Change Order",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSCRIPTION_LINE",
+    "searchType": "SUBSCRIPTION_LINE",
+    "recordTypeId": "subscriptionline",
+    "searchTypeId": "subscriptionline",
+    "label": "Subscription Line",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSCRIPTION_PLAN",
+    "searchType": "SUBSCRIPTION_PLAN",
+    "recordTypeId": "subscriptionplan",
+    "searchTypeId": "subscriptionplan",
+    "label": "Subscription Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSCRIPTION_TERM",
+    "searchType": "SUBSCRIPTION_TERM",
+    "recordTypeId": "subscriptionterm",
+    "searchTypeId": "subscriptionterm",
+    "label": "Subscription Term",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSIDIARY",
+    "searchType": "SUBSIDIARY",
+    "recordTypeId": "subsidiary",
+    "searchTypeId": "subsidiary",
+    "label": "Subsidiary",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBSIDIARY_SETTINGS",
+    "searchType": null,
+    "recordTypeId": "subsidiarysettings",
+    "searchTypeId": null,
+    "label": "Subsidiary Settings",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUBTOTAL_ITEM",
+    "searchType": "SUBTOTAL_ITEM",
+    "recordTypeId": "subtotalitem",
+    "searchTypeId": "subtotalitem",
+    "label": "Subtotal Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": "SUITELET",
+    "searchType": "SUITELET",
+    "recordTypeId": "suitelet",
+    "searchTypeId": "suitelet",
+    "label": "Suitelet",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUPPLY_CHAIN_SNAPSHOT",
+    "searchType": "SUPPLY_CHAIN_SNAPSHOT",
+    "recordTypeId": "supplychainsnapshot",
+    "searchTypeId": "supplychainsnapshot",
+    "label": "Supply Chain Snapshot",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUPPLY_CHAIN_SNAPSHOT_SIMULATION",
+    "searchType": null,
+    "recordTypeId": "supplychainsnapshotsimulation",
+    "searchTypeId": null,
+    "label": "Supply Chain Snapshot Simulation",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUPPLY_CHANGE_ORDER",
+    "searchType": "SUPPLY_CHANGE_ORDER",
+    "recordTypeId": "supplychangeorder",
+    "searchTypeId": "supplychangeorder",
+    "label": "Supply Change Order",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUPPLY_PLAN_DEFINITION",
+    "searchType": "SUPPLY_PLAN_DEFINITION",
+    "recordTypeId": "supplyplandefinition",
+    "searchTypeId": "supplyplandefinition",
+    "label": "Supply Plan Definition",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "SUPPORT_CASE",
+    "searchType": "SUPPORT_CASE",
+    "recordTypeId": "supportcase",
+    "searchTypeId": "supportcase",
+    "label": "Support Case",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "TASK",
+    "searchType": "TASK",
+    "recordTypeId": "task",
+    "searchTypeId": "task",
+    "label": "Task",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": "TAX_ACCT",
+    "searchType": null,
+    "recordTypeId": "taxacct",
+    "searchTypeId": null,
+    "label": "Tax Acct",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TAX_GROUP",
+    "searchType": "TAX_GROUP",
+    "recordTypeId": "taxgroup",
+    "searchTypeId": "taxgroup",
+    "label": "Tax Group",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TAX_PERIOD",
+    "searchType": "TAX_PERIOD",
+    "recordTypeId": "taxperiod",
+    "searchTypeId": "taxperiod",
+    "label": "Tax Period",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TAX_TYPE",
+    "searchType": "TAX_TYPE",
+    "recordTypeId": "taxtype",
+    "searchTypeId": "taxtype",
+    "label": "Tax Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TERM",
+    "searchType": "TERM",
+    "recordTypeId": "term",
+    "searchTypeId": "term",
+    "label": "Term",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_BILL",
+    "searchType": "TIME_BILL",
+    "recordTypeId": "timebill",
+    "searchTypeId": "timebill",
+    "label": "Time Bill",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_ENTRY",
+    "searchType": "TIME_ENTRY",
+    "recordTypeId": "timeentry",
+    "searchTypeId": "timeentry",
+    "label": "Time Entry",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_OFF_CHANGE",
+    "searchType": "TIME_OFF_CHANGE",
+    "recordTypeId": "timeoffchange",
+    "searchTypeId": "timeoffchange",
+    "label": "Time Off Change",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_OFF_PLAN",
+    "searchType": "TIME_OFF_PLAN",
+    "recordTypeId": "timeoffplan",
+    "searchTypeId": "timeoffplan",
+    "label": "Time Off Plan",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_OFF_REQUEST",
+    "searchType": "TIME_OFF_REQUEST",
+    "recordTypeId": "timeoffrequest",
+    "searchTypeId": "timeoffrequest",
+    "label": "Time Off Request",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_OFF_RULE",
+    "searchType": "TIME_OFF_RULE",
+    "recordTypeId": "timeoffrule",
+    "searchTypeId": "timeoffrule",
+    "label": "Time Off Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_OFF_TYPE",
+    "searchType": "TIME_OFF_TYPE",
+    "recordTypeId": "timeofftype",
+    "searchTypeId": "timeofftype",
+    "label": "Time Off Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TIME_SHEET",
+    "searchType": "TIME_SHEET",
+    "recordTypeId": "timesheet",
+    "searchTypeId": "timesheet",
+    "label": "Time Sheet",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TOPIC",
+    "searchType": "TOPIC",
+    "recordTypeId": "topic",
+    "searchTypeId": "topic",
+    "label": "Topic",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "TRANSFER_ORDER",
+    "searchType": "TRANSFER_ORDER",
+    "recordTypeId": "transferorder",
+    "searchTypeId": "transferorder",
+    "label": "Transfer Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "UNITS_TYPE",
+    "searchType": "UNITS_TYPE",
+    "recordTypeId": "unitstype",
+    "searchTypeId": "unitstype",
+    "label": "Units Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "UNLOCKED_TIME_PERIOD",
+    "searchType": "UNLOCKED_TIME_PERIOD",
+    "recordTypeId": "unlockedtimeperiod",
+    "searchTypeId": "unlockedtimeperiod",
+    "label": "Unlocked Time Period",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "USAGE",
+    "searchType": "USAGE",
+    "recordTypeId": "usage",
+    "searchTypeId": "usage",
+    "label": "Usage",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "USEREVENT_SCRIPT",
+    "searchType": "USEREVENT_SCRIPT",
+    "recordTypeId": "usereventscript",
+    "searchTypeId": "usereventscript",
+    "label": "Userevent Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "VENDOR",
+    "searchType": "VENDOR",
+    "recordTypeId": "vendor",
+    "searchTypeId": "vendor",
+    "label": "Vendor",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": "VENDOR_BILL",
+    "searchType": "VENDOR_BILL",
+    "recordTypeId": "vendorbill",
+    "searchTypeId": "vendorbill",
+    "label": "Vendor Bill",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_CATEGORY",
+    "searchType": "VENDOR_CATEGORY",
+    "recordTypeId": "vendorcategory",
+    "searchTypeId": "vendorcategory",
+    "label": "Vendor Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "VENDOR_CREDIT",
+    "searchType": "VENDOR_CREDIT",
+    "recordTypeId": "vendorcredit",
+    "searchTypeId": "vendorcredit",
+    "label": "Vendor Credit",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_PAYMENT",
+    "searchType": "VENDOR_PAYMENT",
+    "recordTypeId": "vendorpayment",
+    "searchTypeId": "vendorpayment",
+    "label": "Vendor Payment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_PREPAYMENT",
+    "searchType": "VENDOR_PREPAYMENT",
+    "recordTypeId": "vendorprepayment",
+    "searchTypeId": "vendorprepayment",
+    "label": "Vendor Prepayment",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_PREPAYMENT_APPLICATION",
+    "searchType": "VENDOR_PREPAYMENT_APPLICATION",
+    "recordTypeId": "vendorprepaymentapplication",
+    "searchTypeId": "vendorprepaymentapplication",
+    "label": "Vendor Prepayment Application",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_RETURN_AUTHORIZATION",
+    "searchType": "VENDOR_RETURN_AUTHORIZATION",
+    "recordTypeId": "vendorreturnauthorization",
+    "searchTypeId": "vendorreturnauthorization",
+    "label": "Vendor Return Authorization",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "VENDOR_SUBSIDIARY_RELATIONSHIP",
+    "searchType": "VENDOR_SUBSIDIARY_RELATIONSHIP",
+    "recordTypeId": "vendorsubsidiaryrelationship",
+    "searchTypeId": "vendorsubsidiaryrelationship",
+    "label": "Vendor Subsidiary Relationship",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "WAVE",
+    "searchType": "WAVE",
+    "recordTypeId": "wave",
+    "searchTypeId": "wave",
+    "label": "Wave",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "WBS",
+    "searchType": "WBS",
+    "recordTypeId": "wbs",
+    "searchTypeId": "wbs",
+    "label": "Wbs",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "WEBSITE",
+    "searchType": "WEBSITE",
+    "recordTypeId": "website",
+    "searchTypeId": "website",
+    "label": "Website",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "WORKFLOW_ACTION_SCRIPT",
+    "searchType": "WORKFLOW_ACTION_SCRIPT",
+    "recordTypeId": "workflowactionscript",
+    "searchTypeId": "workflowactionscript",
+    "label": "Workflow Action Script",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "WORK_ORDER",
+    "searchType": "WORK_ORDER",
+    "recordTypeId": "workorder",
+    "searchTypeId": "workorder",
+    "label": "Work Order",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "WORK_ORDER_CLOSE",
+    "searchType": "WORK_ORDER_CLOSE",
+    "recordTypeId": "workorderclose",
+    "searchTypeId": "workorderclose",
+    "label": "Work Order Close",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "WORK_ORDER_COMPLETION",
+    "searchType": "WORK_ORDER_COMPLETION",
+    "recordTypeId": "workordercompletion",
+    "searchTypeId": "workordercompletion",
+    "label": "Work Order Completion",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "WORK_ORDER_ISSUE",
+    "searchType": "WORK_ORDER_ISSUE",
+    "recordTypeId": "workorderissue",
+    "searchTypeId": "workorderissue",
+    "label": "Work Order Issue",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": "WORKPLACE",
+    "searchType": "WORKPLACE",
+    "recordTypeId": "workplace",
+    "searchTypeId": "workplace",
+    "label": "Workplace",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": "ZONE",
+    "searchType": "ZONE",
+    "recordTypeId": "zone",
+    "searchTypeId": "zone",
+    "label": "Zone",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ACTIVITY",
+    "recordTypeId": null,
+    "searchTypeId": "activity",
+    "label": "Activity",
+    "recordCategory": "crm"
+  },
+  {
+    "recordType": null,
+    "searchType": "AGGR_FIN_DAT",
+    "recordTypeId": null,
+    "searchTypeId": "AggrFinDat",
+    "label": "Aggr Fin Dat",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ALLOC_RECOMMENDATION_DEMAND",
+    "recordTypeId": null,
+    "searchTypeId": "AllocRecommendationDemand",
+    "label": "Alloc Recommendation Demand",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ALLOC_RECOMMENDATION_DETAIL",
+    "recordTypeId": null,
+    "searchTypeId": "AllocRecommendationDetail",
+    "label": "Alloc Recommendation Detail",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "AUTHENTICATE_DEVICE_INPUT",
+    "recordTypeId": null,
+    "searchTypeId": "AuthenticateDeviceInput",
+    "label": "Authenticate Device Input",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BALANCING_DETAIL",
+    "recordTypeId": null,
+    "searchTypeId": "BalancingDetail",
+    "label": "Balancing Detail",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BALANCING_RESULT",
+    "recordTypeId": null,
+    "searchTypeId": "BalancingResult",
+    "label": "Balancing Result",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BALANCING_TRANSACTION",
+    "recordTypeId": null,
+    "searchTypeId": "BalancingTransaction",
+    "label": "Balancing Transaction",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BILLING_ACCOUNT_BILL_CYCLE",
+    "recordTypeId": null,
+    "searchTypeId": "BillingAccountBillCycle",
+    "label": "Billing Account Bill Cycle",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BILLING_ACCOUNT_BILL_REQUEST",
+    "recordTypeId": null,
+    "searchTypeId": "BillingAccountBillRequest",
+    "label": "Billing Account Bill Request",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "BIN_ITEM_BALANCE",
+    "recordTypeId": null,
+    "searchTypeId": "BinItemBalance",
+    "label": "Bin Item Balance",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "CARDHOLDER_AUTHENTICATION_EVENT",
+    "recordTypeId": null,
+    "searchTypeId": "CardholderAuthenticationEvent",
+    "label": "Cardholder Authentication Event",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "CHALLENGE_SHOPPER_INPUT",
+    "recordTypeId": null,
+    "searchTypeId": "ChallengeShopperInput",
+    "label": "Challenge Shopper Input",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COM_SEARCH_BOOST",
+    "recordTypeId": null,
+    "searchTypeId": "ComSearchBoost",
+    "label": "Com Search Boost",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COM_SEARCH_BOOST_TYPE",
+    "recordTypeId": null,
+    "searchTypeId": "ComSearchBoostType",
+    "label": "Com Search Boost Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COM_SEARCH_GROUP_SYN",
+    "recordTypeId": null,
+    "searchTypeId": "ComSearchGroupSyn",
+    "label": "Com Search Group Syn",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COM_SEARCH_ONE_WAY_SYN",
+    "recordTypeId": null,
+    "searchTypeId": "ComSearchOneWaySyn",
+    "label": "Com Search One Way Syn",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COMM_AN_SESSION",
+    "recordTypeId": null,
+    "searchTypeId": "CommAnSession",
+    "label": "Comm An Session",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "COMMERCE_SEARCH_ACTIVITY_DATA",
+    "recordTypeId": null,
+    "searchTypeId": "CommerceSearchActivityData",
+    "label": "Commerce Search Activity Data",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "CURRENCY_EXCHANGE_RATE",
+    "recordTypeId": null,
+    "searchTypeId": "CurrencyExchangeRate",
+    "label": "Currency Exchange Rate",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "DELETED_RECORD",
+    "recordTypeId": null,
+    "searchTypeId": "DeletedRecord",
+    "label": "Deleted Record",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "EMPLOYEE_CHANGE_TYPE",
+    "recordTypeId": null,
+    "searchTypeId": null,
+    "label": "Employee Change Type",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "EMPLOYEE_PAYROLL_ITEM",
+    "recordTypeId": null,
+    "searchTypeId": "EmployeePayrollItem",
+    "label": "Employee Payroll Item",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "END_TO_END_TIME",
+    "recordTypeId": null,
+    "searchTypeId": "EndToEndTime",
+    "label": "End To End Time",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ENTITY",
+    "recordTypeId": null,
+    "searchTypeId": "entity",
+    "label": "Entity",
+    "recordCategory": "entity"
+  },
+  {
+    "recordType": null,
+    "searchType": "EXPENSE_AMORT_PLAN_AND_SCHEDULE",
+    "recordTypeId": null,
+    "searchTypeId": "ExpenseAmortPlanAndSchedule",
+    "label": "Expense Amort Plan And Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "GATEWAY_NOTIFICATION",
+    "recordTypeId": null,
+    "searchTypeId": "GatewayNotification",
+    "label": "Gateway Notification",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "GL_LINES_AUDIT_LOG",
+    "recordTypeId": null,
+    "searchTypeId": "GlLinesAuditLog",
+    "label": "Gl Lines Audit Log",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INSTALLMENT",
+    "recordTypeId": null,
+    "searchTypeId": "Installment",
+    "label": "Installment",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVENTORY_BALANCE",
+    "recordTypeId": null,
+    "searchTypeId": "InventoryBalance",
+    "label": "Inventory Balance",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVENTORY_DEMAND",
+    "recordTypeId": null,
+    "searchTypeId": "InventoryDemand",
+    "label": "Inventory Demand",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVENTORY_NUMBER_BIN",
+    "recordTypeId": null,
+    "searchTypeId": "InventoryNumberBin",
+    "label": "Inventory Number Bin",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVENTORY_NUMBER_ITEM",
+    "recordTypeId": null,
+    "searchTypeId": "InventoryNumberItem",
+    "label": "Inventory Number Item",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVENTORY_STATUS_LOCATION",
+    "recordTypeId": null,
+    "searchTypeId": "InventoryStatusLocation",
+    "label": "Inventory Status Location",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "INVT_NUMBER_ITEM_BALANCE",
+    "recordTypeId": null,
+    "searchTypeId": "InvtNumberItemBalance",
+    "label": "Invt Number Item Balance",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ITEM",
+    "recordTypeId": null,
+    "searchTypeId": "item",
+    "label": "Item",
+    "recordCategory": "item"
+  },
+  {
+    "recordType": null,
+    "searchType": "ITEM_BIN_NUMBER",
+    "recordTypeId": null,
+    "searchTypeId": "ItemBinNumber",
+    "label": "Item Bin Number",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_BASED_PROJECT_REVENUE_RULE",
+    "recordTypeId": null,
+    "searchTypeId": "laborbasedprojectrevenuerule",
+    "label": "Labor Based Project Revenue Rule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_CATEGORY",
+    "recordTypeId": null,
+    "searchTypeId": "LaborCategory",
+    "label": "Labor Category",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_COST_CARD",
+    "recordTypeId": null,
+    "searchTypeId": "LaborCostCard",
+    "label": "Labor Cost Card",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_COST_CARD_ITEM",
+    "recordTypeId": null,
+    "searchTypeId": "LaborCostCardItem",
+    "label": "Labor Cost Card Item",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_COST_CARD_SEGMENT",
+    "recordTypeId": null,
+    "searchTypeId": "LaborCostCardSegment",
+    "label": "Labor Cost Card Segment",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "LABOR_COST_ELEMENT",
+    "recordTypeId": null,
+    "searchTypeId": "LaborCostElement",
+    "label": "Labor Cost Element",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "MERCHANDISE _HIERARCHY_LEVEL",
+    "recordTypeId": null,
+    "searchTypeId": null,
+    "label": "Merchandise  Hierarchy Level",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PAYMENT_EVENT",
+    "recordTypeId": null,
+    "searchTypeId": "PaymentEvent",
+    "label": "Payment Event",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PAYMENT_INSTRUMENT",
+    "recordTypeId": null,
+    "searchTypeId": "PaymentInstrument",
+    "label": "Payment Instrument",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PAYMENT_OPTION",
+    "recordTypeId": null,
+    "searchTypeId": "PaymentOption",
+    "label": "Payment Option",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PAYMENT_RESULT_PREVIEW",
+    "recordTypeId": null,
+    "searchTypeId": "PaymentResultPreview",
+    "label": "Payment Result Preview",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PAYROLL_SETUP",
+    "recordTypeId": null,
+    "searchTypeId": "PayrollSetup",
+    "label": "Payroll Setup",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PERMISSION",
+    "recordTypeId": null,
+    "searchTypeId": "Permission",
+    "label": "Permission",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_ENGINE_MESSAGE",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningEngineMessage",
+    "label": "Planning Engine Message",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_ENGINE_PEGGING",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningEnginePegging",
+    "label": "Planning Engine Pegging",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_ENGINE_RESULT",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningEngineResult",
+    "label": "Planning Engine Result",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_REPOSITORY_ALLOCATION",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningRepositoryAllocation",
+    "label": "Planning Repository Allocation",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_REPOSITORY_BOM_EDGE",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningRepositoryBomEdge",
+    "label": "Planning Repository Bom Edge",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_REPOSITORY_ITEM_LOCATION",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningRepositoryItemLocation",
+    "label": "Planning Repository Item Location",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PLANNING_REPOSITORY_SOURCE",
+    "recordTypeId": null,
+    "searchTypeId": "PlanningRepositorySource",
+    "label": "Planning Repository Source",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PRICING",
+    "recordTypeId": null,
+    "searchTypeId": "Pricing",
+    "label": "Pricing",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "PROMISING_SETUP",
+    "recordTypeId": null,
+    "searchTypeId": "PromisingSetup",
+    "label": "Promising Setup",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "RECENT_RECORD",
+    "recordTypeId": null,
+    "searchTypeId": "RecentRecord",
+    "label": "Recent Record",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "RECEIVED_VENDOR_BILL",
+    "recordTypeId": null,
+    "searchTypeId": "ReceivedVendorBill",
+    "label": "Received Vendor Bill",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "RES_ALLOCATION_TIME_OFF_CONFLICT",
+    "recordTypeId": null,
+    "searchTypeId": "ResAllocationTimeOffConflict",
+    "label": "Res Allocation Time Off Conflict",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "REV_REC_PLAN_AND_SCHEDULE",
+    "recordTypeId": null,
+    "searchTypeId": "RevRecPlanAndSchedule",
+    "label": "Rev Rec Plan And Schedule",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "ROLE",
+    "recordTypeId": null,
+    "searchTypeId": "Role",
+    "label": "Role",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "S_C_M_PREDICTED_RISKS",
+    "recordTypeId": null,
+    "searchTypeId": "SCMPredictedRisks",
+    "label": "S C M Predicted Risks",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "S_C_M_PREDICTION_TRAIN_HISTORY",
+    "recordTypeId": null,
+    "searchTypeId": "SCMPredictionTrainHistory",
+    "label": "S C M Prediction Train History",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "S_C_M_PREDICTION_TRAIN_W_Q_STATUS",
+    "recordTypeId": null,
+    "searchTypeId": "SCMPredictionTrainWQStatus",
+    "label": "S C M Prediction Train W Q Status",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SAVED_SEARCH",
+    "recordTypeId": null,
+    "searchTypeId": "SavedSearch",
+    "label": "Saved Search",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SHOPPING_CART",
+    "recordTypeId": null,
+    "searchTypeId": "ShoppingCart",
+    "label": "Shopping Cart",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "STATE",
+    "recordTypeId": null,
+    "searchTypeId": "State",
+    "label": "State",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SUBSCRIPTION_LINE_REVISION",
+    "recordTypeId": null,
+    "searchTypeId": "SubscriptionLineRevision",
+    "label": "Subscription Line Revision",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SUBSCRIPTION_RENEWAL_HISTORY",
+    "recordTypeId": null,
+    "searchTypeId": "SubscriptionRenewalHistory",
+    "label": "Subscription Renewal History",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SUITE_SCRIPT_DETAIL",
+    "recordTypeId": null,
+    "searchTypeId": "SuiteScriptDetail",
+    "label": "Suite Script Detail",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SUPPLY_CHAIN_SNAPSHOT_DETAILS",
+    "recordTypeId": null,
+    "searchTypeId": "SupplyChainSnapshotDetails",
+    "label": "Supply Chain Snapshot Details",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "SYSTEM_NOTE",
+    "recordTypeId": null,
+    "searchTypeId": "SystemNote",
+    "label": "System Note",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "TAX_DETAIL",
+    "recordTypeId": null,
+    "searchTypeId": "TaxDetail",
+    "label": "Tax Detail",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "TIMESHEET_APPROVAL",
+    "recordTypeId": null,
+    "searchTypeId": "TimesheetApproval",
+    "label": "Timesheet Approval",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "TIME_APPROVAL",
+    "recordTypeId": null,
+    "searchTypeId": "TimeApproval",
+    "label": "Time Approval",
+    "recordCategory": "otherRecords"
+  },
+  {
+    "recordType": null,
+    "searchType": "TRANSACTION",
+    "recordTypeId": null,
+    "searchTypeId": "transaction",
+    "label": "Transaction",
+    "recordCategory": "transaction"
+  },
+  {
+    "recordType": null,
+    "searchType": "UBER",
+    "recordTypeId": null,
+    "searchTypeId": "Uber",
+    "label": "Uber",
+    "recordCategory": "otherRecords"
+  }
+]

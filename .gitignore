@@ -1,0 +1,19 @@
+# Agent-context file, not for partners
+project.md
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# SuiteCloud CLI
+.suitecloud-sdk/
+
+# Logs
+*.log
+
+# Node (in case anyone wraps this with tooling)
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory_ai_setting">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_ai]</centertab>
+  <label>Setting</label>
+  <links>
+    <link>
+      <linklabel>AI Provider</linklabel>
+      <linkobject>[scriptid=customrecord_ai_provider]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Models</linklabel>
+      <linkobject>[scriptid=customrecord_ai_models]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel></linklabel>
+      <linkobject>[scriptid=customrecord_ai_defaults]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

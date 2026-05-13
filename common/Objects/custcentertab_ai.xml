@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centertab scriptid="custcentertab_ai">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>BASIC</center>
+  <label>AI</label>
+</centertab>

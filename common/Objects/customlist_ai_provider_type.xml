@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customlist scriptid="customlist_ai_provider_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>NSAI Provider Type</name>
+  <customvalues>
+    <customvalue scriptid="val_127265_td2887310_440">
+      <isinactive>F</isinactive>
+      <value>LLM</value>
+    </customvalue>
+    <customvalue scriptid="val_127266_td2887310_752">
+      <isinactive>F</isinactive>
+      <value>RAG</value>
+    </customvalue>
+  </customvalues>
+</customlist>

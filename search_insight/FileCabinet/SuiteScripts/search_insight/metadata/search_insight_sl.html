@@ -1,0 +1,569 @@
+﻿<div id="nai-insight-root">
+  <div class="nai-insight-toolbar">
+    <div class="nai-insight-field nai-insight-search-field">
+      <label>Saved Search</label>
+      <select id="naiSearch">
+        <option value="">-- Loading saved searches... --</option>
+      </select>
+    </div>
+    <button
+      id="naiSortBtn"
+      type="button"
+      class="nai-insight-btn nai-insight-btn-sort"
+      title="Toggle sort direction"
+    >
+      A &rarr; Z
+    </button>
+    <div class="nai-insight-field">
+      <label>Provider</label>
+      <select id="naiProvider"></select>
+    </div>
+    <div class="nai-insight-field">
+      <label>Model</label>
+      <select id="naiModel"></select>
+    </div>
+    <button id="naiSubmit" type="button" class="nai-insight-btn" disabled>
+      Get Insight
+    </button>
+    <button
+      id="naiOpenSearch"
+      type="button"
+      class="nai-insight-btn nai-insight-btn-open"
+      disabled
+    >
+      Open Search
+    </button>
+  </div>
+  <div class="nai-insight-chat">
+    <div class="nai-chat-header">User Input</div>
+    <textarea
+      id="naiChatInput"
+      class="nai-chat-input"
+      rows="2"
+      placeholder="Please analyze this search result and summarize the key findings"
+    ></textarea>
+  </div>
+  <div id="naiStatus" class="nai-insight-status"></div>
+  <div id="naiError" class="nai-insight-error"></div>
+  <div id="naiResult" class="nai-insight-result"></div>
+  <div id="naiPreview" class="nai-insight-preview"></div>
+</div>
+
+<style>
+  #nai-insight-root {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+  }
+
+  .nai-insight-toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .nai-insight-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .nai-insight-field label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+  }
+  .nai-insight-field select,
+  .nai-insight-field input {
+    padding: 4px 8px;
+    min-width: 180px;
+    font-size: 13px;
+  }
+  .nai-insight-search-field {
+    min-width: 360px;
+  }
+  .nai-insight-btn {
+    padding: 6px 18px;
+    background: #0070d2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    align-self: flex-end;
+  }
+  .nai-insight-btn:hover {
+    background: #005fb2;
+  }
+  .nai-insight-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .nai-insight-btn-open {
+    background: #607d8b;
+  }
+  .nai-insight-btn-open:hover {
+    background: #4e6a76;
+  }
+  .nai-insight-btn-sort {
+    background: #fff;
+    color: #555;
+    border: 1px solid #ccc;
+    min-width: 64px;
+    font-weight: 600;
+  }
+  .nai-insight-btn-sort:hover {
+    background: #f5f5f5;
+    color: #222;
+  }
+
+  .nai-insight-status {
+    margin: 12px 0;
+    font-size: 13px;
+    color: #666;
+    min-height: 20px;
+  }
+  .nai-insight-status.nai-processing {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0070d2;
+  }
+  .nai-insight-status.nai-processing::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #e0e0e0;
+    border-top-color: #0070d2;
+    border-radius: 50%;
+    animation: naiSpin 0.8s linear infinite;
+    flex-shrink: 0;
+  }
+  @keyframes naiSpin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .nai-insight-preview {
+    margin: 16px 0;
+  }
+  .nai-insight-preview-header {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  .nai-insight-preview table,
+  .nai-insight-result table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  .nai-insight-preview th,
+  .nai-insight-preview td,
+  .nai-insight-result th,
+  .nai-insight-result td {
+    border: 1px solid #ddd;
+    padding: 5px 8px;
+    text-align: left;
+  }
+  .nai-insight-preview th,
+  .nai-insight-result th {
+    background: #f5f5f5;
+    font-weight: 600;
+  }
+  .nai-insight-preview tr:nth-child(even),
+  .nai-insight-result tr:nth-child(even) {
+    background: #fafafa;
+  }
+
+  .nai-insight-result {
+    margin-top: 16px;
+    line-height: 1.6;
+  }
+  .nai-insight-result .nai-insight-analysis {
+    margin-bottom: 16px;
+  }
+  .nai-insight-result h1 {
+    margin: 22px 0 10px;
+    font-size: 18px;
+    color: #222;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+  }
+  .nai-insight-result h2 {
+    margin: 20px 0 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  .nai-insight-result h3 {
+    margin: 18px 0 8px;
+    font-size: 15px;
+    color: #333;
+  }
+  .nai-insight-result h4 {
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+  }
+  .nai-insight-result p {
+    margin: 8px 0;
+  }
+  .nai-insight-result ul,
+  .nai-insight-result ol {
+    margin: 8px 0;
+    padding-left: 24px;
+  }
+  .nai-insight-result li {
+    margin: 4px 0;
+  }
+  .nai-insight-result hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+  }
+  .nai-insight-result code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+  }
+  .nai-insight-result strong {
+    font-weight: 600;
+  }
+
+  .nai-insight-preview a,
+  .nai-insight-result a {
+    color: #0070d2;
+    text-decoration: none;
+  }
+  .nai-insight-preview a:hover,
+  .nai-insight-result a:hover {
+    text-decoration: underline;
+  }
+
+  .nai-insight-error {
+    color: #c00;
+    margin: 12px 0;
+  }
+
+  .nai-insight-chat {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+  }
+  .nai-chat-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .nai-chat-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+  }
+</style>
+
+<script>
+  (function () {
+    var B = window.__SEARCH_INSIGHT_BOOTSTRAP__;
+    if (!B) return;
+    var DEFAULT_QUESTION =
+      "Please analyze this search result and summarize the key findings";
+
+    var searchSel = document.getElementById("naiSearch");
+    var providerSel = document.getElementById("naiProvider");
+    var modelSel = document.getElementById("naiModel");
+    var submitBtn = document.getElementById("naiSubmit");
+    var openSearchBtn = document.getElementById("naiOpenSearch");
+    var sortBtn = document.getElementById("naiSortBtn");
+    var previewEl = document.getElementById("naiPreview");
+    var statusEl = document.getElementById("naiStatus");
+    var resultEl = document.getElementById("naiResult");
+    var errorEl = document.getElementById("naiError");
+
+    var SORT_PREF_KEY = "naiSearchInsight_sortDir";
+    var allSearches = [];
+    var sortDir = "asc";
+    try {
+      var stored = window.localStorage.getItem(SORT_PREF_KEY);
+      if (stored === "asc" || stored === "desc") sortDir = stored;
+    } catch (_) {
+      /* localStorage unavailable; use default */
+    }
+
+    function searchLabel(s) {
+      return s.title ? s.title + " (" + s.recordType + ")" : "Search #" + s.id;
+    }
+
+    function sortSearches(list, dir) {
+      var sorted = list.slice();
+      sorted.sort(function (a, b) {
+        var ta = searchLabel(a).toLowerCase();
+        var tb = searchLabel(b).toLowerCase();
+        if (ta < tb) return dir === "asc" ? -1 : 1;
+        if (ta > tb) return dir === "asc" ? 1 : -1;
+        return 0;
+      });
+      return sorted;
+    }
+
+    function updateSortBtn() {
+      sortBtn.innerHTML = sortDir === "asc" ? "A &rarr; Z" : "Z &rarr; A";
+      sortBtn.title =
+        sortDir === "asc"
+          ? "Sorted A to Z. Click to sort Z to A."
+          : "Sorted Z to A. Click to sort A to Z.";
+    }
+
+    function renderSearchOptions() {
+      var current = searchSel.value || B.searchId || "";
+      var sorted = sortSearches(allSearches, sortDir);
+      searchSel.innerHTML =
+        '<option value="">-- Select a saved search --</option>';
+      sorted.forEach(function (s) {
+        var o = document.createElement("option");
+        o.value = s.id;
+        o.textContent = searchLabel(s);
+        if (current && String(s.id) === String(current)) o.selected = true;
+        searchSel.appendChild(o);
+      });
+      updateSortBtn();
+    }
+
+    sortBtn.addEventListener("click", function () {
+      sortDir = sortDir === "asc" ? "desc" : "asc";
+      try {
+        window.localStorage.setItem(SORT_PREF_KEY, sortDir);
+      } catch (_) {
+        /* ignore */
+      }
+      renderSearchOptions();
+    });
+
+    function getParam(k) {
+      var m = window.location.search.match(new RegExp("[?&]" + k + "=([^&]*)"));
+      return m ? m[1] : "";
+    }
+
+    var baseUrl =
+      window.location.href.split("?")[0] +
+      "?script=" +
+      getParam("script") +
+      "&deploy=" +
+      getParam("deploy");
+
+    function apiUrl(params) {
+      var u = baseUrl;
+      for (var k in params) {
+        u += "&" + k + "=" + encodeURIComponent(params[k]);
+      }
+      return u;
+    }
+
+    function populateProviders() {
+      providerSel.innerHTML = "";
+      B.providers.forEach(function (p) {
+        var o = document.createElement("option");
+        o.value = p.internalId;
+        o.textContent = p.label;
+        if (p.internalId === B.providerId) o.selected = true;
+        providerSel.appendChild(o);
+      });
+      populateModels();
+    }
+
+    function populateModels() {
+      modelSel.innerHTML = "";
+      var pid = providerSel.value;
+      var prov = null;
+      B.providers.forEach(function (p) {
+        if (p.internalId === pid) prov = p;
+      });
+      if (!prov) return;
+      prov.models.forEach(function (m) {
+        var o = document.createElement("option");
+        o.value = m;
+        o.textContent = m;
+        if (m === B.modelId) o.selected = true;
+        modelSel.appendChild(o);
+      });
+    }
+
+    providerSel.addEventListener("change", function () {
+      populateModels();
+    });
+    populateProviders();
+
+    function loadSearches() {
+      updateSortBtn();
+      fetch(apiUrl({ searchInsightApi: "searches" }))
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (d) {
+          if (!d.success) return;
+          allSearches = d.searches || [];
+          renderSearchOptions();
+          if (B.searchId) loadPreview(B.searchId);
+        })
+        .catch(function () {
+          searchSel.innerHTML =
+            '<option value="">Error loading searches</option>';
+        });
+    }
+
+    function loadPreview(sid) {
+      if (!sid) {
+        previewEl.innerHTML = "";
+        submitBtn.disabled = true;
+        return;
+      }
+      previewEl.innerHTML =
+        '<div class="nai-insight-preview-header">Loading preview...</div>';
+      submitBtn.disabled = true;
+
+      fetch(apiUrl({ searchInsightApi: "preview", searchId: sid }))
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (d) {
+          if (!d.success) {
+            previewEl.innerHTML =
+              '<div class="nai-insight-error">' +
+              (d.error || "Failed to load preview") +
+              "</div>";
+            return;
+          }
+          previewEl.innerHTML =
+            '<div class="nai-insight-preview-header">' +
+            d.title +
+            " &mdash; " +
+            d.rowCount +
+            " total row" +
+            (d.rowCount === 1 ? "" : "s") +
+            (d.previewCount < d.rowCount
+              ? " (showing first " + d.previewCount + ")"
+              : "") +
+            "</div>" +
+            d.html;
+          submitBtn.disabled = false;
+        })
+        .catch(function (e) {
+          previewEl.innerHTML =
+            '<div class="nai-insight-error">' + e.message + "</div>";
+        });
+    }
+
+    var chatInput = document.getElementById("naiChatInput");
+
+    searchSel.addEventListener("change", function () {
+      resultEl.innerHTML = "";
+      errorEl.textContent = "";
+      statusEl.textContent = "";
+      openSearchBtn.disabled = !searchSel.value;
+      chatInput.value = "";
+      loadPreview(searchSel.value);
+    });
+
+    openSearchBtn.addEventListener("click", function () {
+      var sid = searchSel.value;
+      if (!sid) return;
+      window.open(
+        "/app/common/search/searchresults.nl?searchid=" + sid,
+        "_blank",
+      );
+    });
+
+    submitBtn.addEventListener("click", function () {
+      var sid = searchSel.value;
+      if (!sid) return;
+      submitBtn.disabled = true;
+      statusEl.textContent = "Submitting...";
+      statusEl.className = "nai-insight-status nai-processing";
+      resultEl.innerHTML = "";
+      errorEl.textContent = "";
+
+      var question = chatInput.value.trim() || DEFAULT_QUESTION;
+      chatInput.value = "";
+
+      var body = JSON.stringify({
+        searchId: sid,
+        providerId: providerSel.value,
+        model: modelSel.value,
+        question: question,
+      });
+
+      fetch(baseUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: body,
+      })
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (d) {
+          if (!d.success) {
+            errorEl.textContent = d.error || "Failed";
+            submitBtn.disabled = false;
+            statusEl.textContent = "";
+            statusEl.className = "nai-insight-status";
+            return;
+          }
+          pollJob(d.jobId);
+        })
+        .catch(function (e) {
+          errorEl.textContent = e.message;
+          submitBtn.disabled = false;
+          statusEl.textContent = "";
+          statusEl.className = "nai-insight-status";
+        });
+    });
+
+    function pollJob(jobId) {
+      var u = apiUrl({ searchInsightApi: "jobStatus", jobId: jobId });
+      setTimeout(function check() {
+        fetch(u)
+          .then(function (r) {
+            return r.json();
+          })
+          .then(function (d) {
+            if (d.status === "completed") {
+              statusEl.textContent = "";
+              statusEl.className = "nai-insight-status";
+              submitBtn.disabled = false;
+              resultEl.innerHTML = d.result || "No result.";
+              return;
+            }
+            if (d.status === "failed") {
+              statusEl.textContent = "";
+              statusEl.className = "nai-insight-status";
+              submitBtn.disabled = false;
+              errorEl.textContent = d.error || "Processing failed.";
+              return;
+            }
+            statusEl.textContent = d.progress || "Processing...";
+            setTimeout(check, 2000);
+          })
+          .catch(function (e) {
+            errorEl.textContent = e.message;
+            submitBtn.disabled = false;
+            statusEl.textContent = "";
+            statusEl.className = "nai-insight-status";
+          });
+      }, 2000);
+    }
+
+    loadSearches();
+  })();
+</script>

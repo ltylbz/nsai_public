@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customlist scriptid="customlist_ai_model_usage">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>NSAI Model Usage</name>
+  <customvalues>
+    <customvalue scriptid="val_126777_td2887310_290">
+      <isinactive>F</isinactive>
+      <value>Text</value>
+    </customvalue>
+    <customvalue scriptid="val_126778_td2887310_950">
+      <isinactive>F</isinactive>
+      <value>Visual</value>
+    </customvalue>
+    <customvalue scriptid="val_126781_td2887310_183">
+      <isinactive>F</isinactive>
+      <value>File</value>
+    </customvalue>
+    <customvalue scriptid="val_126782_td2887310_323">
+      <isinactive>F</isinactive>
+      <value>Text&amp;Image</value>
+    </customvalue>
+    <customvalue scriptid="val_126783_td2887310_126">
+      <isinactive>F</isinactive>
+      <value>Test&amp;File</value>
+    </customvalue>
+    <customvalue scriptid="val_126784_td2887310_427">
+      <isinactive>F</isinactive>
+      <value>Image&amp;File</value>
+    </customvalue>
+    <customvalue scriptid="val_126785_td2887310_981">
+      <isinactive>F</isinactive>
+      <value>All</value>
+    </customvalue>
+  </customvalues>
+</customlist>

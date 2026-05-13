@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapreducescript scriptid="customscript_search_insight_mr">
+  <description>Processes queued Search Insight jobs: runs saved search, sends data to LLM, stores result.</description>
+  <isinactive>F</isinactive>
+  <name>Search Insight M/R</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/search_insight/search_insight_mr.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_search_insight_mr">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Search Insight M/R</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

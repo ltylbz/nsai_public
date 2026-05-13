@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapreducescript scriptid="customscript_record_ai_mr">
+  <description>Processes queued Record AI jobs: loads record, sends data + question to LLM, stores answer.</description>
+  <isinactive>F</isinactive>
+  <name>Record AI M/R</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/record_ai/record_ai_mr.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_record_ai_mr">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Record AI M/R</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

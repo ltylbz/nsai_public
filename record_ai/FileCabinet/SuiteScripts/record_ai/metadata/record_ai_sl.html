@@ -1,0 +1,667 @@
+﻿<style>
+  .nai-ra-wrap {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .nai-ra-toolbar {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+  }
+  .nai-ra-toolbar label {
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .nai-ra-toolbar select {
+    font-size: 12px;
+    padding: 2px 4px;
+    min-width: 0;
+  }
+  .nai-ra-toolbar .nai-ra-rec-info {
+    margin-left: auto;
+    font-size: 11px;
+    color: #666;
+    flex-shrink: 0;
+  }
+  .nai-ra-params {
+    border-bottom: 1px solid #ddd;
+    padding: 4px 0 8px;
+    flex-shrink: 0;
+  }
+  .nai-ra-params summary {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+  }
+  .nai-ra-params-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+    gap: 6px;
+    margin-top: 6px;
+  }
+  .nai-ra-params-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 11px;
+    color: #333;
+  }
+  .nai-ra-params-grid input {
+    font-size: 12px;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nai-ra-chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+  }
+  .nai-ra-msg {
+    padding: 6px 10px;
+    border-radius: 8px;
+    max-width: 92%;
+    font-size: 12px;
+    line-height: 1.45;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+  .nai-ra-msg-user {
+    align-self: flex-end;
+    background: #e3f2fd;
+    color: #0d47a1;
+  }
+  .nai-ra-msg-ai {
+    align-self: flex-start;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .nai-ra-msg-ai h1,
+  .nai-ra-msg-ai h2,
+  .nai-ra-msg-ai h3,
+  .nai-ra-msg-ai h4 {
+    margin: 6px 0 3px;
+  }
+  .nai-ra-msg-ai h1 {
+    font-size: 15px;
+  }
+  .nai-ra-msg-ai h2 {
+    font-size: 14px;
+  }
+  .nai-ra-msg-ai h3 {
+    font-size: 13px;
+  }
+  .nai-ra-msg-ai p {
+    margin: 3px 0;
+  }
+  .nai-ra-msg-ai ul,
+  .nai-ra-msg-ai ol {
+    margin: 3px 0;
+    padding-left: 18px;
+  }
+  .nai-ra-msg-ai table {
+    border-collapse: collapse;
+    margin: 4px 0;
+    font-size: 11px;
+    width: 100%;
+  }
+  .nai-ra-msg-ai th,
+  .nai-ra-msg-ai td {
+    border: 1px solid #ccc;
+    padding: 3px 6px;
+    text-align: left;
+  }
+  .nai-ra-msg-ai th {
+    background: #eee;
+  }
+  .nai-ra-msg-ai code {
+    background: #eee;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-size: 11px;
+  }
+  .nai-ra-msg-ai a {
+    color: #1565c0;
+  }
+  .nai-ra-msg-ai hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 6px 0;
+  }
+  .nai-ra-msg-ai strong {
+    font-weight: 700;
+  }
+  .nai-ra-msg-progress {
+    align-self: flex-start;
+    background: #fff8e1;
+    color: #f57f17;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  .nai-ra-msg-error {
+    align-self: flex-start;
+    background: #fbe9e7;
+    color: #c62828;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  .nai-ra-input-area {
+    display: flex;
+    gap: 6px;
+    padding: 6px 0;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+    align-items: flex-end;
+  }
+  .nai-ra-input-area textarea {
+    flex: 1;
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 32px;
+    max-height: 100px;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  .nai-ra-question-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+  .nai-ra-question-picker label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #444;
+  }
+  .nai-ra-question-picker select {
+    font-size: 12px;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nai-ra-input-area button {
+    padding: 6px 14px;
+    font-size: 12px;
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .nai-ra-input-area button:disabled {
+    background: #90a4ae;
+    cursor: default;
+  }
+
+  @keyframes nai-ra-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .nai-ra-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #f57f17;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: nai-ra-spin 0.7s linear infinite;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+</style>
+
+<div class="nai-ra-wrap">
+  <div class="nai-ra-toolbar">
+    <label>Provider</label>
+    <select id="naiRaProvider"></select>
+    <label>Model</label>
+    <select id="naiRaModel"></select>
+    <span class="nai-ra-rec-info" id="naiRaRecInfo"></span>
+  </div>
+  <details class="nai-ra-params">
+    <summary>LLM Parameters</summary>
+    <div class="nai-ra-params-grid">
+      <label
+        >Temperature
+        <input
+          id="naiRaTemperature"
+          type="number"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.2"
+        />
+      </label>
+      <label
+        >Top P
+        <input
+          id="naiRaTopP"
+          type="number"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.2"
+        />
+      </label>
+      <label
+        >Top K
+        <input id="naiRaTopK" type="number" min="2" step="1" value="3" />
+      </label>
+      <label
+        >Penalty
+        <input
+          id="naiRaPenalty"
+          type="number"
+          min="-2"
+          max="2"
+          step="0.1"
+          value="0"
+        />
+      </label>
+    </div>
+  </details>
+  <div class="nai-ra-chat" id="naiRaChat"></div>
+  <div class="nai-ra-input-area">
+    <div class="nai-ra-question-picker">
+      <label for="naiRaQuestionTemplate">Default prompts</label>
+      <select id="naiRaQuestionTemplate"></select>
+      <textarea id="naiRaInput" rows="1"></textarea>
+    </div>
+    <button id="naiRaSubmit" type="button">Submit</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var B = window.__RECORD_AI_BOOTSTRAP__ || {};
+    var providers = B.providers || [];
+    var recordType = B.recordType || "";
+    var recordId = B.recordId || "";
+    var defaultQuestions = B.defaultQuestions || [];
+    var defaultQuestion =
+      B.defaultQuestion || "What should I pay attention to in this record?";
+    var conversationHistory = [];
+    var polling = false;
+
+    var provSel = document.getElementById("naiRaProvider");
+    var modSel = document.getElementById("naiRaModel");
+    var chatArea = document.getElementById("naiRaChat");
+    var inputEl = document.getElementById("naiRaInput");
+    var questionTplSel = document.getElementById("naiRaQuestionTemplate");
+    var submitBtn = document.getElementById("naiRaSubmit");
+    var recInfo = document.getElementById("naiRaRecInfo");
+    var temperatureEl = document.getElementById("naiRaTemperature");
+    var topPEl = document.getElementById("naiRaTopP");
+    var topKEl = document.getElementById("naiRaTopK");
+    var penaltyEl = document.getElementById("naiRaPenalty");
+
+    recInfo.textContent = recordType + " #" + recordId;
+    inputEl.placeholder = defaultQuestion;
+
+    if (!defaultQuestions.length) defaultQuestions = [defaultQuestion];
+    questionTplSel.innerHTML = "";
+    for (var q = 0; q < defaultQuestions.length; q++) {
+      var qOpt = document.createElement("option");
+      qOpt.value = defaultQuestions[q];
+      qOpt.textContent = defaultQuestions[q];
+      questionTplSel.appendChild(qOpt);
+    }
+    questionTplSel.value = defaultQuestion;
+    questionTplSel.addEventListener("change", function () {
+      inputEl.value = questionTplSel.value || "";
+      inputEl.focus();
+    });
+
+    function populateProviders() {
+      provSel.innerHTML = "";
+      for (var i = 0; i < providers.length; i++) {
+        var o = document.createElement("option");
+        o.value = providers[i].internalId;
+        o.textContent = providers[i].label;
+        provSel.appendChild(o);
+      }
+      if (B.providerId) provSel.value = B.providerId;
+      populateModels();
+    }
+
+    function populateModels() {
+      modSel.innerHTML = "";
+      var pid = provSel.value;
+      var prov = null;
+      for (var i = 0; i < providers.length; i++) {
+        if (providers[i].internalId === pid) {
+          prov = providers[i];
+          break;
+        }
+      }
+      if (!prov) return;
+      for (var j = 0; j < prov.models.length; j++) {
+        var o = document.createElement("option");
+        o.value = prov.models[j];
+        o.textContent = prov.models[j];
+        modSel.appendChild(o);
+      }
+      if (B.modelId && prov.models.indexOf(B.modelId) !== -1)
+        modSel.value = B.modelId;
+    }
+
+    provSel.addEventListener("change", populateModels);
+    populateProviders();
+
+    function addMessage(type, content) {
+      var div = document.createElement("div");
+      div.className = "nai-ra-msg nai-ra-msg-" + type;
+      if (type === "ai" || type === "error" || type === "progress") {
+        div.innerHTML = content;
+      } else {
+        div.textContent = content;
+      }
+      chatArea.appendChild(div);
+      chatArea.scrollTop = chatArea.scrollHeight;
+      return div;
+    }
+
+    function removeElement(el) {
+      if (el && el.parentNode) el.parentNode.removeChild(el);
+    }
+
+    function setSubmitEnabled(enabled) {
+      submitBtn.disabled = !enabled;
+      inputEl.disabled = !enabled;
+      questionTplSel.disabled = !enabled;
+      temperatureEl.disabled = !enabled;
+      topPEl.disabled = !enabled;
+      topKEl.disabled = !enabled;
+      penaltyEl.disabled = !enabled;
+    }
+
+    function parseBoundedFloat(rawValue, min, max, name) {
+      var n = Number(rawValue);
+      if (isNaN(n) || n < min || n > max) {
+        throw new Error(name + " must be between " + min + " and " + max + ".");
+      }
+      return n;
+    }
+
+    function readLlmParams() {
+      var temperature = parseBoundedFloat(
+        temperatureEl.value,
+        0,
+        1,
+        "Temperature",
+      );
+      var topP = parseBoundedFloat(topPEl.value, 0, 1, "Top P");
+      var penalty = parseBoundedFloat(penaltyEl.value, -2, 2, "Penalty");
+      var topKNum = Number(topKEl.value);
+      if (isNaN(topKNum) || topKNum % 1 !== 0 || topKNum <= 1) {
+        throw new Error("Top K must be an integer greater than 1.");
+      }
+      return {
+        temperature: temperature,
+        topP: topP,
+        topK: topKNum,
+        frequencyPenalty: penalty,
+      };
+    }
+
+    function getSuiteletUrl() {
+      var current = window.location.href;
+      return current.split("&recordAiApi")[0].split("#")[0];
+    }
+
+    function postJson(url, data, cb) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          try {
+            cb(JSON.parse(xhr.responseText));
+          } catch (e) {
+            cb({
+              success: false,
+              error:
+                "Bad response (HTTP " +
+                xhr.status +
+                "): " +
+                String(xhr.responseText || "").slice(0, 200),
+            });
+          }
+        }
+      };
+      xhr.send(JSON.stringify(data));
+    }
+
+    function getJson(url, cb) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url, true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          try {
+            cb(JSON.parse(xhr.responseText));
+          } catch (e) {
+            cb({
+              success: false,
+              error:
+                "Bad response (HTTP " +
+                xhr.status +
+                "): " +
+                String(xhr.responseText || "").slice(0, 200),
+            });
+          }
+        }
+      };
+      xhr.send();
+    }
+
+    function pollJob(jobId, progressEl) {
+      var baseUrl = getSuiteletUrl();
+      var pollUrl =
+        baseUrl + "&recordAiApi=jobStatus&jobId=" + encodeURIComponent(jobId);
+      var done = false;
+      var transientFailures = 0;
+      var maxTransientFailures = 3;
+      var interval = setInterval(function () {
+        if (done) return;
+        getJson(pollUrl, function (resp) {
+          if (done) return;
+          if (!resp.success) {
+            transientFailures++;
+            if (transientFailures < maxTransientFailures) {
+              if (progressEl) {
+                progressEl.innerHTML =
+                  '<span class="nai-ra-spinner"></span>Retrying polling (' +
+                  transientFailures +
+                  "/" +
+                  maxTransientFailures +
+                  ")...";
+              }
+              return;
+            }
+            done = true;
+            clearInterval(interval);
+            removeElement(progressEl);
+            addMessage("error", resp.error || "Polling failed.");
+            setSubmitEnabled(true);
+            return;
+          }
+          transientFailures = 0;
+          if (resp.status === "completed") {
+            done = true;
+            clearInterval(interval);
+            removeElement(progressEl);
+            addMessage("ai", resp.result);
+            var lastQ = conversationHistory.length
+              ? conversationHistory[conversationHistory.length - 1]
+              : null;
+            if (lastQ && !lastQ.answer) {
+              lastQ.answer = resp.result;
+            }
+            setSubmitEnabled(true);
+            return;
+          }
+          if (resp.status === "failed") {
+            done = true;
+            clearInterval(interval);
+            removeElement(progressEl);
+            addMessage("error", resp.error || "Processing failed.");
+            setSubmitEnabled(true);
+            return;
+          }
+          if (resp.progress && progressEl) {
+            progressEl.innerHTML =
+              '<span class="nai-ra-spinner"></span>' + resp.progress;
+          }
+        });
+      }, 2500);
+    }
+
+    function submitQuestion() {
+      var question = inputEl.value.trim() || defaultQuestion;
+      if (polling) return;
+      var llmParams;
+      try {
+        llmParams = readLlmParams();
+      } catch (err) {
+        addMessage("error", err.message || "Invalid LLM parameters.");
+        return;
+      }
+
+      addMessage("user", question);
+      inputEl.value = "";
+      setSubmitEnabled(false);
+
+      conversationHistory.push({ question: question, answer: "" });
+
+      var historyForPost = [];
+      for (var i = 0; i < conversationHistory.length - 1; i++) {
+        historyForPost.push(conversationHistory[i]);
+      }
+
+      var progressEl = addMessage(
+        "progress",
+        '<span class="nai-ra-spinner"></span>Submitting...',
+      );
+
+      var baseUrl = getSuiteletUrl();
+      postJson(
+        baseUrl,
+        {
+          recordType: recordType,
+          recordId: recordId,
+          question: question,
+          history: JSON.stringify(historyForPost),
+          providerId: provSel.value,
+          model: modSel.value,
+          llmParams: llmParams,
+        },
+        function (resp) {
+          if (!resp.success) {
+            removeElement(progressEl);
+            addMessage("error", resp.error || "Submit failed.");
+            conversationHistory.pop();
+            setSubmitEnabled(true);
+            return;
+          }
+          progressEl.innerHTML =
+            '<span class="nai-ra-spinner"></span>Processing...';
+          pollJob(resp.jobId, progressEl);
+        },
+      );
+    }
+
+    submitBtn.addEventListener("click", submitQuestion);
+    inputEl.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        submitQuestion();
+      }
+    });
+
+    window.addEventListener("beforeunload", function () {
+      if (!recordType || !recordId || !navigator.sendBeacon) return;
+      var cleanupUrl =
+        getSuiteletUrl() +
+        "&recordAiApi=cleanup&recordType=" +
+        encodeURIComponent(recordType) +
+        "&recordId=" +
+        encodeURIComponent(recordId);
+      navigator.sendBeacon(cleanupUrl);
+    });
+
+    function fitPopup() {
+      var hideIds = ["div__header", "ns_header", "_Navigation", "ns-header"];
+      for (var i = 0; i < hideIds.length; i++) {
+        var el = document.getElementById(hideIds[i]);
+        if (el) el.style.display = "none";
+      }
+      var hideSelectors = [
+        ".uir-page-title",
+        ".uir-page-title-firstline",
+        "#ns_navigation",
+        ".ns-header",
+        ".bglt",
+      ];
+      for (var j = 0; j < hideSelectors.length; j++) {
+        var els = document.querySelectorAll(hideSelectors[j]);
+        for (var k = 0; k < els.length; k++) els[k].style.display = "none";
+      }
+
+      var allBodies = [document.getElementById("body"), document.body];
+      for (var b = 0; b < allBodies.length; b++) {
+        if (!allBodies[b]) continue;
+        allBodies[b].style.margin = "0";
+        allBodies[b].style.padding = "0";
+        allBodies[b].style.overflow = "hidden";
+      }
+
+      var containers = document.querySelectorAll(
+        "#main_form, .uir-record-content, #div__body, #content, .uir_form, td.bglt",
+      );
+      for (var c = 0; c < containers.length; c++) {
+        containers[c].style.margin = "0";
+        containers[c].style.padding = "0";
+        containers[c].style.border = "none";
+      }
+
+      var wrap = document.querySelector(".nai-ra-wrap");
+      if (!wrap) return;
+      var rect = wrap.getBoundingClientRect();
+      var availW = window.innerWidth - rect.left - 8;
+      if (availW < 200) availW = 200;
+      wrap.style.width = availW + "px";
+      var availH = window.innerHeight - rect.top - 4;
+      if (availH < 150) availH = 150;
+      wrap.style.height = availH + "px";
+    }
+
+    fitPopup();
+    window.addEventListener("resize", fitPopup);
+  })();
+</script>

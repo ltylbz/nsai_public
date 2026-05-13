@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centercategory scriptid="custcentercategory_search_insight">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_ai]</centertab>
+  <label>Search Insight</label>
+  <links>
+    <link>
+      <linklabel>Search Insight</linklabel>
+      <linkobject>[scriptid=customscript_search_insight_sl.customdeploy_search_insight_sl]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Jobs</linklabel>
+      <linkobject>[scriptid=customrecord_search_insight_job]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

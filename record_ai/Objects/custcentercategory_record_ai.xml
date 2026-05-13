@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centercategory scriptid="custcentercategory_record_ai">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_ai]</centertab>
+  <label>Record AI</label>
+  <links>
+    <link>
+      <linklabel>Record AI</linklabel>
+      <linkobject>[scriptid=customscript_record_ai_sl.customdeploy_record_ai_sl]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Jobs</linklabel>
+      <linkobject>[scriptid=customrecord_record_ai_job]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>
